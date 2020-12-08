@@ -2,49 +2,60 @@
 @import './common/media';
 
 .run {
-    width: 100%;
+    // width: 100%;
 }
 .run-container {
-    width: 100%;
-    // display: flex;
-    // flex-direction: column-reverse;
-    // justify-content: center;
-    height: 550px;
-    position: relative;
-    overflow: hidden;
+    // width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
 }
 .run-block {
-
+    width: 100%;
+    height: 490px;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
 }
 .run-block__fon {
     background-image: url(../../css/img/fon-paral-run.png);
     position: absolute;
-    background-position: top 55%  right 0%;
+    background-position: top 93% right 7%;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 49%;
     width: 100%;
     height:100%;
     transition: all 0.1s ease; 
-    z-index: 2;
+    // right: 0;
+    z-index: 7;
 }
 .run-block__player {
+    position: absolute;
     background-image: url(../../css/img/player-paral-run.png);
-    background-position: top 32% right 0%;
+    background-position: top 100% right 0%;
     background-repeat: no-repeat;
-    background-size: 35%;
+    background-size: 40%;
     width: 100%;
     height: 100%;
     transition: all 0.1s ease; 
-    z-index: 2;
+    z-index: 7;
+    // right: 0;
+
 }
 .run-block-content {
     width: 900px;
     position: absolute;
     top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     left: 40px;
     background: linear-gradient(182deg, rgba(214, 240, 251, 0.7) 0.37%, rgba(161, 209, 251, 0.7) 149.49%, rgba(161, 209, 251, 0.7) 149.49%);
     transform: skew(-10deg);
-    z-index: 1;
+    z-index: 9;
     h3 {
         font-family: Play;
         font-style: normal;
@@ -57,9 +68,12 @@
 }
 .run-btn {
     text-align: center;
+    cursor:pointer;
 }
 .run-block-wrap {
     transform: skew(10deg);
     padding: 40px 129px 50px 108px;
+    position: relative;
+    z-index: 1;
 }
 
