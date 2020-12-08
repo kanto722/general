@@ -10,7 +10,7 @@
     }
 }
 body{
-    font-family: "rubik", "sans-serif";
+    font-family: "Play", "sans-serif";
     font-size: 10px;
     min-width: 320px;
     position: relative;
@@ -20,7 +20,9 @@ body{
     padding: 0;
     background: #FFFFFF;
 }
-
+li {
+    list-style: none;
+}
 .wrap{
     width: 100%;
     position: relative;
