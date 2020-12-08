@@ -6,7 +6,7 @@
 }
 //паралаксы
 .promo-container {
-    height: 887px;
+    height: 750px;
     position: relative;
     overflow: hidden;
 }
@@ -14,7 +14,7 @@
 
     position: absolute;
     background-image: url(/css/img/fon-paral.jpg);
-    background-position: top 30% right 15%;
+    background-position: top 60% right 15%;
     background-repeat: no-repeat;
     background-size: 60%;
     width: 100%;
@@ -25,7 +25,7 @@
 .promo-paralax-track {
     position: absolute;
     background-image: url(/css/img/track.png);
-    background-position: top 0% right 25%;
+    background-position: top 0% right 20%;
     background-repeat: no-repeat;
     background-size: 45%;
     width: 100%;
@@ -42,7 +42,7 @@
     height:100%;
     transition: all 0.1s ease; 
     &_text {
-        transform: translate(730px, 145px);
+        transform: translate(730px, 130px);
         max-width: 207px;
         font-family: Play;
         font-style: normal;
@@ -91,20 +91,19 @@
 .promo-btn {
 }
 
-.promo-btn:hover {
-	transform: skew(-20deg) translate(2px, 2px);
-}
 
 //подвал
 .promo-bottom {
     // width: 1255px;
     // height: 118px;
+    max-width: 1255px;
     display: flex;
     align-items: center;
     margin-left: 120px;
     background: linear-gradient(182deg, rgba(214, 240, 251, 0.7) 0.37%, rgba(161, 209, 251, 0.7) 149.49%, rgba(161, 209, 251, 0.7) 149.49%);
     transform: skew(-25deg);
-
+    padding-bottom: 23px;
+    padding-top: 17px;
 }
 .promo-bottom_wrap {
     // width: 1255px;

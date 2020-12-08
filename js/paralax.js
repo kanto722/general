@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
 function parallax(distance, itemBg, itemElement=null) {
     window.addEventListener('mousemove', function (e) {
         const x = e.clientX / distance;
-        itemBg.style.backgroundPosition = `-${x * 50}px`;
+        itemBg.style.backgroundPosition = `-${x * 70}px`;
         if (itemElement)
-            itemElement.style.transform = `translateX(${x * 50}px)`;
+            itemElement.style.transform = `translateX(${x * 70}px)`;
     });
 }
 

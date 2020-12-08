@@ -105,6 +105,11 @@
 		}
 }
 
-.header-btn:hover {
-	transform: skew(-20deg) translate(2px, 2px);
+
+.header-btn {
+    width: 199px;
+    height: 40px;
+}
+.header-btn_wrap {
+    margin-top: 0;
 }
