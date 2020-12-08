@@ -1,0 +1,60 @@
+@import './variable';
+@import './common/media';
+
+
+.promo {
+}
+.promo-container {
+    height: 887px;
+    position: relative;
+    overflow: hidden;
+}
+.promo-paralax-fon {
+    position: absolute;
+    background-image: url(/css/img/fon-paral.jpg);
+    background-position: top 30% right 15%;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    width: 100%;
+    height:100%;
+    transition: all 0.1s ease; 
+    
+}
+.promo-paralax-track {
+    position: absolute;
+    background-image: url(/css/img/track.png);
+    background-position: top 0% right 25%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.1s ease; 
+}
+.promo-paralax-elem {
+    position: absolute;
+    background-image: url(/css/img/promo-elem.png);
+    background-position: top 20% right 57%;
+    background-repeat: no-repeat;
+    background-size: 28%;
+    width: 100%;
+    height:100%;
+    transition: all 0.1s ease; 
+    &_text {
+        transform: translate(640px, 190px);
+        max-width: 207px;
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+}
+
+
+.promo-block {
+}
+.promo-btn {
+}
+.btn-style {
+}

@@ -1,0 +1,21 @@
+.btn-style {
+    transform: skew(-32deg);
+	transition: .1s;
+    a {
+        display: block;
+        transform: skew(20deg);
+        background: linear-gradient(180deg, #FFCF00 0%, #FFB800 100%);
+        outline: none;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: Play;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+        color: $subtext;
+        padding: 10px 33px;
+        
+    }
+}
