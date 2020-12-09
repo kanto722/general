@@ -2,12 +2,15 @@
 @import './common/media';
 
 .speak {
+    padding-bottom: 74px;
 }
 .speak-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    position: relative;
     width: 100%;
 }
 .speak-title {
@@ -38,6 +41,8 @@
 }
 .speak-slider {
     max-width: 1188px;
+    display: flex;
+    flex-direction: row;
 }
 .swiper-container {
 }
@@ -46,10 +51,55 @@
 .swiper-slide {
 }
 .slider-wrap {
+    width: 396px;
     background: linear-gradient(182deg, rgba(214, 240, 251, 0.7) 0.37%, rgba(161, 209, 251, 0.7) 149.49%, rgba(161, 209, 251, 0.7) 149.49%);
 		&__content {
             background-image: url(../../css/img/svg/comma.svg);
             background-repeat: no-repeat;
+            background-position: bottom 44% left 8%;
+            background-size: 20%;
+            width: 100%;
+            height: 582px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 35px 31px 68px 35px;
+            img {
+                width: 120px;
+                object-fit: cover;
+                margin-bottom: 10px;
+            }
+            h2 {
+                font-family: Play;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 150%;
+                color: $title2;
+                margin-bottom: 27px;
+            }
+            p {
+                max-width: 242px;
+                font-family: Play;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                color: $subtext;
+                margin-bottom: 42px;
+            }
+            p:nth-child(4) {
+                max-width: 321px;
+                font-family: Play;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: inherit;
+                color: $subtext;
+                margin-bottom: 0;
+            }
 		}
 }
 .swiper-button-prev {
