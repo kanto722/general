@@ -3,7 +3,7 @@
 
 .track {
     padding-top: 11px;
-    padding-bottom: 28px;
+    padding-bottom: 60px;
 
 }
 .track-paralax {
@@ -12,6 +12,7 @@
     background-size: 100%;
 }
 .track-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     // justify-content: center;
@@ -21,7 +22,6 @@
 .track-title {
     display: flex;
     flex-direction: column;
-    width: 100%;
     p {
         font-family: Play;
         font-style: normal;
@@ -49,17 +49,17 @@
 .track-content {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
     // width: 100%;
     // align-items: flex-start;
     // justify-content: space-around;
     
 }
 .track-content-block {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-right: 100px;
 }
 .track-block {
 		&_item {
