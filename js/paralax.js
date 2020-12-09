@@ -1,3 +1,4 @@
+// promo section
 // paralax number one
 document.addEventListener('DOMContentLoaded', function () {
     const windowWidth = window.innerWidth;
@@ -55,8 +56,10 @@ function parallax3(distance, itemBg, itemElement=null) {
             itemElement.style.transform = `translateX(${x * -50}px)`;
     });
 }
+// promo section
 
 
+// run section
 //paralax number four --run
 document.addEventListener('DOMContentLoaded', function () {
     const windowWidth = window.innerWidth;
@@ -94,7 +97,9 @@ function parallax3(distance, itemBg, itemElement=null) {
             itemElement.style.transform = `translateX(${x * -50}px)`;
     });
 }
+// run section
 
+//help section
 //paralax number six --help
 document.addEventListener('DOMContentLoaded', function () {
     const windowWidth = window.innerWidth;
@@ -132,4 +137,46 @@ function parallax3(distance, itemBg, itemElement=null) {
             itemElement.style.transform = `translateX(${x * +60}px)`;
     });
 }
+//help section
 
+
+//sity section
+//paralax number eight --sity
+document.addEventListener('DOMContentLoaded', function () {
+    const windowWidth = window.innerWidth;
+    const headerBg = document.querySelector('.sity');
+    const headerItem8 = document.querySelector('.sity-block__fon');
+
+    if (windowWidth > 992) {
+        parallax3(windowWidth, headerBg, headerItem8);
+    }
+});
+function parallax3(distance, itemBg, itemElement=null) {
+    window.addEventListener('mousemove', function (e) {
+        const x = e.clientX / distance;
+        itemBg.style.backgroundPosition = `-${x * +50}px`;
+        if (itemElement)
+            itemElement.style.transform = `translateX(${x * +50}px)`;
+    });
+}
+
+//paralax number nine --sity
+document.addEventListener('DOMContentLoaded', function () {
+    const windowWidth = window.innerWidth;
+    const headerBg = document.querySelector('.sity');
+    const headerItem7 = document.querySelector('.sity-block__player');
+
+    if (windowWidth > 992) {
+        parallax3(windowWidth, headerBg, headerItem7);
+    }
+});
+function parallax3(distance, itemBg, itemElement=null) {
+    window.addEventListener('mousemove', function (e) {
+        const x = e.clientX / distance;
+        itemBg.style.backgroundPosition = `-${x * +60}px`;
+        if (itemElement)
+            itemElement.style.transform = `translateX(${x * +60}px)`;
+
+    });
+}
+//sity section

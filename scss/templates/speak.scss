@@ -1,0 +1,58 @@
+@import './variable';
+@import './common/media';
+
+.speak {
+}
+.speak-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.speak-title {
+    margin-bottom: 38px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: $gray3;
+        margin-bottom: 20px;
+        span {
+            color: $title;
+        }
+    }
+    h2 {
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: $title2;
+    }
+}
+.speak-slider {
+    max-width: 1188px;
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.slider-wrap {
+    background: linear-gradient(182deg, rgba(214, 240, 251, 0.7) 0.37%, rgba(161, 209, 251, 0.7) 149.49%, rgba(161, 209, 251, 0.7) 149.49%);
+		&__content {
+            background-image: url(../../css/img/svg/comma.svg);
+            background-repeat: no-repeat;
+		}
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
