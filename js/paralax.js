@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerBg = document.querySelector('.promo');
     const headerItem = document.querySelector('.promo-paralax-fon');
 
-    if (windowWidth > 768) {
+    if (windowWidth > 1070) {
         parallax(windowWidth, headerBg, headerItem);
     }
 });
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerBg = document.querySelector('.promo');
     const headerItem = document.querySelector('.promo-paralax-track');
 
-    if (windowWidth > 768) {
+    if (windowWidth > 1070) {
         parallax2(windowWidth, headerBg, headerItem);
     }
 });
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerBg = document.querySelector('.promo');
     const headerItem = document.querySelector('.promo-paralax-elem');
 
-    if (windowWidth > 992) {
+    if (windowWidth > 1070) {
         parallax3(windowWidth, headerBg, headerItem);
     }
 });
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerBg = document.querySelector('.run');
     const headerItem4 = document.querySelector('.run-block__fon');
 
-    if (windowWidth > 992) {
+    if (windowWidth > 1070) {
         parallax3(windowWidth, headerBg, headerItem4);
     }
 });
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerBg = document.querySelector('.run');
     const headerItem5 = document.querySelector('.run-block__player');
 
-    if (windowWidth > 992) {
+    if (windowWidth > 1070) {
         parallax3(windowWidth, headerBg, headerItem5);
     }
 });
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerBg = document.querySelector('.help');
     const headerItem6 = document.querySelector('.help-block__fon');
 
-    if (windowWidth > 992) {
+    if (windowWidth > 1070) {
         parallax3(windowWidth, headerBg, headerItem6);
     }
 });
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerBg = document.querySelector('.help');
     const headerItem7 = document.querySelector('.help-block__player');
 
-    if (windowWidth > 992) {
+    if (windowWidth > 1070) {
         parallax3(windowWidth, headerBg, headerItem7);
     }
 });
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerBg = document.querySelector('.sity');
     const headerItem8 = document.querySelector('.sity-block__fon');
 
-    if (windowWidth > 992) {
+    if (windowWidth > 1070) {
         parallax3(windowWidth, headerBg, headerItem8);
     }
 });
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerBg = document.querySelector('.sity');
     const headerItem7 = document.querySelector('.sity-block__player');
 
-    if (windowWidth > 992) {
+    if (windowWidth > 1070) {
         parallax3(windowWidth, headerBg, headerItem7);
     }
 });
