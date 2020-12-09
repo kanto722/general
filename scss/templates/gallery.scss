@@ -1,0 +1,78 @@
+@import './variable';
+@import './common/media';
+
+
+.gallery {
+}
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding: 0px 140px;
+}
+.gallery-title {
+    margin-bottom: 42px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: $gray3;
+        margin-bottom: 20px;
+        span {
+            color: $span;
+        }
+    }
+    h2 {
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: $title2;
+    }
+}
+.gallery-content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 31px;
+		&__img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            margin-right: 18px;
+        }
+        a {
+            position: absolute;
+            left: 100px;
+            cursor: pointer;
+        }
+
+		&__video {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            margin-right: 18px;
+        }
+        &__video:nth-child(4){
+            margin-right: 0;
+        }
+}
+.gallery-btn {
+    width: 100%;
+    align-items: flex-start;
+		&_wrap {
+		}
+}

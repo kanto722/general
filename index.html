@@ -29,25 +29,35 @@
                         <img src="./css/img/svg/logo.svg" alt="logo">
                         <p>Производитель хоккейных дорожек</p>
                     </div>
-                    <nav class="header-nav">
-                        <ul>
-                            <li><a class="header-nav__link" href="#">О тренажере</a></li>
-                            <li><a class="header-nav__link" href="#">Преимущества</a></li>
-                            <li><a class="header-nav__link" href="#">Объекты</a></li>
-                            <li><a class="header-nav__link" href="#">Отзывы</a></li>
-                            <li><a class="header-nav__link" href="#">О компании</a></li>
-                        </ul>
-                    </nav>
-                    <div class="header-connection">
-                        <a href="malito:general-hockey@mail.ru" target="blank">general-hockey@mail.ru</a>
-                        <div class="header-connection_number">
-                            <a href="tel:+79222677282">+7 (922) 267-72-82</a>
-                            <a href="tel:+79224795891">+7 (922) 479-58-91</a>
-                        </div>
+                    <div class="header-burger2">
+                        <span></span>
                     </div>
-                    <div class="header-btn btn-fon">
-                        <div class="header-btn_wrap btn-wrap">
-                            <a class="btn-style" href="#">Обратный звонок</a>
+                    <div class="header-block2">
+                        <nav class="header-nav">
+                            <ul>
+                                <li><a class="header-nav__link" href="#">О тренажере</a></li>
+                                <li><a class="header-nav__link" href="#">Преимущества</a></li>
+                                <li><a class="header-nav__link" href="#">Объекты</a></li>
+                                <li><a class="header-nav__link" href="#">Отзывы</a></li>
+                                <li><a class="header-nav__link" href="#">О компании</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-burger">
+                            <span></span>
+                        </div>
+                        <div class="header-block1">
+                            <div class="header-connection">
+                                <a href="malito:general-hockey@mail.ru" target="blank">general-hockey@mail.ru</a>
+                                <div class="header-connection_number">
+                                    <a href="tel:+79222677282">+7 (922) 267-72-82</a>
+                                    <a href="tel:+79224795891">+7 (922) 479-58-91</a>
+                                </div>
+                            </div>
+                            <div class="header-btn btn-fon">
+                                <div class="header-btn_wrap btn-wrap">
+                                    <a class="btn-style" href="#">Обратный звонок</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -75,29 +85,31 @@
                         </div>
                     </div>
                     <div class="promo-bottom">
-                        <div class="promo-bottom_wrap">
-                            <div class="promo-bottom_item">
-                                <img src="./css/img/svg/player1.svg" alt="player1">
-                                <p>Постановка правильной<br> посадки</p>
-                            </div>
-                            <div class="promo-bottom_item">
-                                <img src="./css/img/svg/player2.svg" alt="player2">
-                                <p>Отработка мощного<br> толчка</p>
-                            </div>
-                            <div class="promo-bottom_item">
-                                <img src="./css/img/svg/player3.svg" alt="player3">
-                                <p>Развитие скорости<br> катания</p>
-                            </div>
-                            <div class="promo-bottom_item">
-                                <img src="./css/img/svg/player4.svg" alt="player4">
-                                <p>Реабилитация после<br> травм</p>
+                        <div class="promo-wrap">
+                            <div class="promo-bottom_wrap">
+                                <div class="promo-bottom_item">
+                                    <img src="./css/img/svg/player1.svg" alt="player1">
+                                    <p>Постановка правильной<br> посадки</p>
+                                </div>
+                                <div class="promo-bottom_item">
+                                    <img src="./css/img/svg/player2.svg" alt="player2">
+                                    <p>Отработка мощного<br> толчка</p>
+                                </div>
+                                <div class="promo-bottom_item">
+                                    <img src="./css/img/svg/player3.svg" alt="player3">
+                                    <p>Развитие скорости<br> катания</p>
+                                </div>
+                                <div class="promo-bottom_item">
+                                    <img src="./css/img/svg/player4.svg" alt="player4">
+                                    <p>Реабилитация после<br> травм</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="safety"> 
+        <section class="safety" style="display: none;"> 
             <div class="safety-wrap">
                 <div class="wrap">
                     <div class="safety-container">
@@ -159,7 +171,7 @@
                 </div>
             </div>
         </section>
-        <section class="run">
+        <section class="run" style="display: none;">
             <div class="wrap">
                 <div class="run-container">
                     <div class="run-block">
@@ -182,8 +194,8 @@
                 </div>
             </div>
         </section>
-        <section class="track">
-            <div class="track-paralax">
+        <section class="track" style="display: none;">
+            <div class="track-paralax" id="background-tree">
                 <div class="wrap">
                     <div class="track-container">
                         <div class="track-title">
@@ -232,7 +244,7 @@
                 </div>
             </div>
         </section>
-        <section class="help">
+        <section class="help" style="display: none;">
             <div class="wrap">
                 <div class="help-container">
                     <div class="help-block-content">
@@ -255,17 +267,47 @@
                 </div>
             </div>
         </section>
-        <section>
-
+        <section class="gallery" style="display: none;">
+            <div class="wrap">
+                <div class="gallery-container">
+                    <div class="gallery-title">
+                        <p><span>/</span> Объекты</p>
+                        <h2>Реализованные объекты</h2>
+                    </div>
+                    <div class="gallery-content">
+                        <div class="gallery-content__img">
+                            <img src="./css/img/gallery-item.png" alt="alt">
+                            <a href="#"><img src="./css/img/svg/img-item.svg" alt="item"></a>
+                        </div>
+                        <div class="gallery-content__video">
+                            <img src="./css/img/video-item1.png" alt="alt">
+                            <a href="#"><img src="./css/img/svg/play.svg" alt="play"></a>
+                        </div>
+                        <div class="gallery-content__video">
+                            <img src="./css/img/video-item2.png" alt="alt">
+                            <a href="#"><img src="./css/img/svg/play.svg" alt="play"></a>
+                        </div>
+                        <div class="gallery-content__video">
+                            <img src="./css/img/video-item3.png" alt="alt">
+                            <a href="#"><img src="./css/img/svg/play.svg" alt="play"></a>
+                        </div>
+                    </div>
+                    <div class="gallery-btn btn-fon">
+                        <div class="gallery-btn_wrap btn-wrap">
+                            <a class="btn-style" href="#">Смотреть все проекты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="maps">
+        <section class="maps" style="display: none;">
             <div class="wrap">
                 <div class="maps-container">
                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A422b316b9615f1dd5eedbedddbf28572fd515fee51686b56bce7539c07f4f1bd&amp;width=100%25&amp;height=596&amp;lang=ru_RU&amp;scroll=false"></script>
                 </div>
             </div>
         </section>
-        <section class="sity">
+        <section class="sity" style="display: none;">
             <div class="wrap">
                 <div class="sity-container">
                     <div class="sity-block">
@@ -288,7 +330,7 @@
                 </div>
             </div>
         </section>
-        <section class="business">
+        <section class="business" style="display: none;">
             <div class="wrap">
                 <div class="business-container">
                     <div class="business-block">
@@ -305,13 +347,13 @@
                     </div>
                     <div class="business-block2">
                         <!-- block-img -->
-                        <div class="business-img"> <img src="./css/img/svg/logo.svg" alt="img"></div>
+                        <div class="business-img"> <img src="./css/img/svg/img-unknow.svg" alt="img"></div>
                         <!-- block-img -->
                     </div>
                 </div>
             </div>
         </section>
-        <section class="speak">
+        <section class="speak" style="display: none;">
             <div class="wrap">
                 <div class="speak-container">
                     <div class="speak-title">
@@ -392,7 +434,7 @@
                 </div>
             </div>
         </section>
-        <section class="general">
+        <section class="general" style="display: none;">
             <div class="wrap">
                 <div class="general-container">
                     <div class="general-block1">
@@ -413,7 +455,7 @@
         </section>
 
 
-        <footer class="footer">
+        <footer class="footer" style="display: none;">
             <div class="wrap">
                 <div class="footer-container">
                     <div class="footer-logo">
@@ -456,5 +498,6 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- bundle swiper -->
         <script src="./js/swiper.js"></script>
+        <script src="./js/burger.js"></script>
     </body>
 </html>

@@ -96,12 +96,15 @@
 .promo-bottom {
     // width: 1255px;
     // height: 118px;
-    max-width: 1255px;
+    width: 100%;
     display: flex;
     align-items: center;
-    margin-left: 120px;
+    justify-content: center;
+}
+.promo-wrap {
+    width: 1255px;
     background: linear-gradient(182deg, rgba(214, 240, 251, 0.7) 0.37%, rgba(161, 209, 251, 0.7) 149.49%, rgba(161, 209, 251, 0.7) 149.49%);
-    transform: skew(-25deg);
+    transform: skew(-15deg);
     padding-bottom: 23px;
     padding-top: 17px;
 }
@@ -112,8 +115,7 @@
     flex-direction: row;
     // align-items: center;
     justify-content: center;
-    transform: skew(25deg);
-    padding-left: 50px;
+    transform: skew(15deg);
 }
 
 .promo-bottom_item {
@@ -153,3 +155,118 @@
     }
 }
 
+@include media-custom (1500px) {
+    .promo-paralax-elem{
+        &_text {
+            transform: translate(703px, 130px);
+        }
+    }
+}
+@include media-custom (1452px){
+    .promo-paralax-elem{
+        &_text {
+            transform: translate(680px, 120px);
+        }
+    }
+}
+@include media-custom (1410px) {
+    .promo-paralax-elem{
+        &_text {
+            transform: translate(656px, 120px);
+        }
+    }
+}
+@include media-custom (1369px) {
+    .promo-paralax-elem{
+        &_text {
+            transform: translate(636px, 120px);
+        }
+    }
+    .promo-paralax-track{
+        background-position: top 0% right 12%;
+    }
+}
+@include media-custom (1342px) {
+    .promo-paralax-elem{
+        &_text {
+            transform: translate(620px, 120px);
+        }
+    }
+}
+@include media-custom (1318px) {
+    .promo-paralax-elem {
+        &_text {
+            transform: translate(608px, 120px);
+        }
+    }
+}
+@include media-custom (1299px) {
+    .promo-paralax-elem {
+        background-position: top 16% right 47%;
+        &_text {
+            font-size: 20px;
+            transform: translate(598px, 120px);
+        }
+    }
+    .promo-container{
+        height: 680px;
+    }
+    .promo-paralax-fon{
+        background-position: top 80% right 15%;
+    }
+    .promo-paralax-track{
+        background-position: top 3% right 12%;
+        background-size: 46%;
+    }
+    .promo-wrap{
+        width: 1150px;
+    }
+    .promo-bottom_item{
+        margin-right: 23px;
+        p {
+            margin-right: 6px;
+        }
+    }
+}
+@include media-custom (1249px) {
+    .promo-paralax-elem{
+        &_text {
+            transform: translate(578px, 120px);
+        }
+    }
+}
+@include media-custom (1222px) {
+    .promo-paralax-elem {
+        &_text {
+            transform: translate(566px, 120px);
+
+        }
+    }
+}
+//1200px
+@include media-laptop {
+    .promo-paralax-fon{
+        background-position: top 80% right 10%;
+
+    }
+    .promo-paralax-track{
+        background-position: top 5% right 12%;
+        background-size: 51%;
+    }
+}
+//992px
+@include media-tablet-horizontal {
+    
+}
+//767px
+@include media-tablet {
+    
+}
+//480px
+@include media-mobile {
+
+}
+//320px
+@include media-mobile-small {
+   
+}
