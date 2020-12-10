@@ -13,7 +13,9 @@
 
 //1200px
 @include media-laptop {
-    
+    .maps {
+        padding-bottom: 40px;
+    }
 }
 //992px
 @include media-tablet-horizontal {
