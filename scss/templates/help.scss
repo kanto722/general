@@ -64,7 +64,7 @@
         font-size: 24px;
         line-height: 150%;
         color: $title;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
     }
 }
 .help-btn {
@@ -81,3 +81,211 @@
     z-index: 1;
 }
 
+.help-block2 {
+    display: none;
+}
+@include media-custom (1572px) {
+    .help-block-content{
+        width: 960px;
+    }
+    .help-block__fon {
+        background-position: top 0% left 10%;
+        background-size: 33%;
+    }
+    .help-block__player{
+        background-position: top 0% left 8%;
+        background-size: 32%;
+    }
+}
+@include media-custom (1465px) {
+    .help-block__fon{
+        background-position: top 20% left 11%;
+        background-size: 29%;
+    }
+    .help-block__player{
+        background-position: top 20% left 8%;
+        background-size: 30%;
+    }
+}
+@include media-custom (1411px) {
+    .help-container{
+        height: 500px;
+    }
+    .help-block {
+        height: 100%;
+        &-content {
+            top: 120px;
+        }
+    }
+    // .help-block__fon{
+    //     background-size: 45%;
+    // }
+    // .help-block__player{
+    //     background-position:  top 90% right 15%;
+    //     background-size: 35%;
+    // }
+    .help-block__fon{
+        background-position: top 45% left 18%;
+        background-size: 39%;
+    }
+    .help-block__player{
+        background-position: top 45% left 18%;
+        background-size: 39%;
+    }
+    .help-block-wrap{
+        flex-direction: column;
+        h3 {
+            margin-bottom: 20px;
+        }
+    }
+    .help-block-content{
+        width: 915px;
+        align-items: flex-end;
+    }
+}
+
+@include media-custom (1291px){
+    .help-block {
+        &-content {
+            top: 80px;
+        }
+    }
+    .help-block-wrap{
+        padding: 40px 31px 40px 60px;
+    }
+    .help-block-content{
+        width: 840px;
+    }
+    // .help-block__fon {
+    //     background-position: top 63% right 12%;
+    // }
+    // .help-block__player {
+    //     background-position:  top 70% right 18%;
+    // }
+}
+
+//1200px
+@include media-laptop {
+    
+}
+@include media-custom (1070px) {
+    .help-container{
+        flex-direction: column-reverse;
+        height: 700px;
+    }
+    .help-block {
+        display: none;
+        height: 100%;
+    }
+    .help-block2{
+        display: block;
+        margin-top: 70px;
+        z-index: 10;
+    }
+    .help-block-content{
+        width: 550px;
+        height: 455px;
+        position: relative;
+        justify-content: flex-end;
+        transform: translateY(-38px) skew(-10deg);
+        top: 0;
+    }
+    .help-block-wrap {
+        padding: 40px 32px 50px 60px;
+    }
+
+}
+//992px
+@include media-tablet-horizontal {
+    
+}
+//767px
+@include media-tablet {
+    .help-container {
+        height: 830px;
+    }
+    .help-block2{
+        margin-top: 40px;
+        width: 100%;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .help-block-content{
+        width: 380px;
+        height: 385px;
+
+        transform: translateY(-129px) skew(-10deg);
+        left: 0px;
+    }
+    .help-block-wrap {
+        padding: 0px 2px 50px 0px;
+        h3 {
+            width: 307px;
+            font-size: 18px;
+        }
+    }
+}
+@include media-custom (693px) {
+    .help-block-content{
+        transform: translateY(-150px) skew(-10deg);
+    }
+    .help-container{
+        height: 783px;
+    }
+}
+@include media-custom (516px) {
+    .help-container {
+        height: 700px;
+    }
+}
+//480px
+@include media-mobile {
+    .help-container{
+        height: 640px;
+    }
+    .help-block-content{
+        width: 100%;
+        height: 350px;
+        transform: translateY(-100px) skew(0deg);
+        left: 0px;
+        h3 {
+            margin-bottom: 20px;
+        }
+    }
+    .help-block-wrap {
+        transform: skew(0deg);
+        padding: 0px 35px 30px 50px;
+
+    }
+}
+@include media-custom (416px) {
+    .help-container {
+        height: 580px;
+    }
+    .help-block-wrap {
+        padding: 0px 20px 30px 20px;
+
+    }
+    .help-block-wrap{
+        h3 {
+            width: 100%;
+        }
+    }
+}
+@include media-custom (360px) {
+    .help-container{
+        height: 520px;
+    }
+    .help-block-wrap {
+        padding: 0px 10px 30px 15px;
+
+    }
+    .help-block2{
+        margin-top: 0;
+    }
+    .help-block-content{
+        transform: translateY(-90px) skew(0deg);
+    }
+}

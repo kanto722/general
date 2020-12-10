@@ -160,6 +160,13 @@
     position: relative;
     z-index: 2;
 }
+@include media-custom (1523px) {
+    .header-connection{
+        a {
+            margin-right: 20px;
+        }
+    }
+}
 
 @include media-custom (1505px) {
     .header-connection {
@@ -183,6 +190,18 @@
          P{
              margin-left: 10px;
          }
+    }
+}
+@include media-custom (1423px) {
+    .header-connection {
+        a {
+            margin-right: 8px;
+        }
+    }
+    .header-nav{
+        &__link {
+            padding-right: 8px;
+        }
     }
 }
 @include media-custom (1400px){
@@ -423,14 +442,14 @@
     }
     .header-block2 {
         width: 100%;
-        top: 56px;
+        top: 53px;
     }
     .header-burger2{
         top: 17px;
         right: 17px;
     }
     .header-block2.active{
-        top: 56px;
+        top: 53px;
     }
 }
 //480px

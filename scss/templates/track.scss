@@ -2,14 +2,15 @@
 @import './common/media';
 
 .track {
-    padding-top: 11px;
-    padding-bottom: 60px;
-
+    // padding-bottom: 60px;
 }
 .track-paralax {
     background-image: url(../../css/img/sneg.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-attachment:fixed; // паралакс под вопросом на скрол
+    background-position: center center;
+
 }
 .track-container {
     width: 100%;
@@ -149,3 +150,163 @@
 
 }
 
+//1200px
+@include media-laptop {
+    
+}
+//992px
+@include media-tablet-horizontal {
+    .track-paralax {
+        background-image: none;
+    }
+    .track-block{
+        &_item {
+            flex-direction: column;
+            margin-bottom: 20px;
+            text-align: center;
+            img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+        &_item:nth-child(1) {
+            p {
+                width: 188px;
+            }
+        }
+        &_item:nth-child(2) {
+            p {
+                width: 239px;
+            }
+        }
+        &_item:nth-child(3) {
+            p {
+                width: 208px;
+            }
+        }
+        &_item:nth-child(4) {
+            margin-bottom: 0;
+            p {
+                width: 292px;
+            }
+        }
+    }
+    .track-block2 {
+        &_item {
+            flex-direction: column;
+            margin-bottom: 20px;
+            text-align: center;
+            img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+        &_item:nth-child(1) {
+            p {
+                width: 384px;
+            }
+        }
+        &_item:nth-child(2) {
+            p {
+                width: 389px;
+            }
+        }
+        &_item:nth-child(3) {
+            p {
+                width: 389px;
+            }
+        }
+        &_item:nth-child(4) {
+            margin-bottom: 40px;
+            p {
+                width: 389px;
+            }
+        }
+    }
+}
+//767px
+@include media-tablet {
+    .track-title {
+        p {
+            margin-bottom: 15px;
+        }
+        h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 34px;
+        }
+    }
+    .track-content {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@include media-custom (720px) {
+    .track-content-block {
+        margin-bottom: 40px;
+    }
+}
+//480px
+@include media-mobile {
+    .track-title {
+        h2 {
+            font-size: 28px;
+        }
+    }
+    .track-block{
+        &_item {
+            margin-bottom: 40px;
+        }
+        &_item:nth-child(1) {
+            p {
+                width: 188px;
+            }
+        }
+        &_item:nth-child(2) {
+            p {
+                width: 239px;
+            }
+        }
+        &_item:nth-child(3) {
+            p {
+                width: 208px;
+            }
+        }
+        &_item:nth-child(4) {
+            margin-bottom: 0;
+            p {
+                width: 292px;
+            }
+        }
+    }
+    .track-block2 {
+        &_item {
+            margin-bottom: 40px;
+        }
+        &_item:nth-child(1) {
+            p {
+                width: 292px;
+            }
+        }
+        &_item:nth-child(2) {
+            p {
+                width: 292px;
+            }
+        }
+        &_item:nth-child(3) {
+            p {
+                width: 292px;
+            }
+        }
+        &_item:nth-child(4) {
+            margin-bottom: 40px;
+            p {
+                width: 292px;
+            }
+        }
+    }
+}
+//320px
+@include media-mobile-small {
+   
+}
