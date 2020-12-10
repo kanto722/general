@@ -236,6 +236,15 @@
             }
       }
 }
+@include media-custom (993px) {
+      .safety-elem2 {
+            &__fon__content {
+                  h3 {
+                        font-size: 22px;
+                  }
+            }
+      }
+}
 //992px
 @include media-tablet-horizontal {
     

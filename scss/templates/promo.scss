@@ -380,7 +380,10 @@
         display: none;
     }
     .promo-bottom_wrap{
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
+    }
+    .promo-bottom_item{
+        margin-right: 10px;
     }
     .promo-block {
         margin-bottom: 20px;
