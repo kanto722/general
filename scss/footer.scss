@@ -44,6 +44,9 @@ padding-bottom: 56px;
             cursor: pointer;
 
         }
+        &__link:hover {
+            color: $hover;
+        }
         li:nth-child(1) {
             a {
                 margin-right: 65px;
@@ -108,6 +111,9 @@ padding-bottom: 56px;
             text-decoration: none;
             cursor: pointer;
 
+        }
+        a:hover {
+            color: $hover;
         }
 }
 .footer-wrap {

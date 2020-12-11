@@ -88,6 +88,10 @@
             padding-right: 15px;
 
         }
+        &__link:hover{
+            color: $hover;
+            font-weight: bold;
+        }
 
 }
 .header-connection {
@@ -107,6 +111,9 @@
             line-height: 19px;
             margin-right: 38px;
             margin-left: 10px;
+        }
+        a:hover{
+            color: $hover;
         }
 		&_number {
             display: flex;

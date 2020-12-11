@@ -88,4 +88,3 @@ let mySwiper = new Swiper(slider, {
     }
   })
 
-

@@ -291,7 +291,7 @@
                        <div class="gallery-content__wrap">
                             <div class="gallery-content__img">
                                 <img src="./css/img/gallery-item.png" alt="alt">
-                                <a data-fancybox="gallery" rel = "group" href="#go"><img src="./css/img/svg/img-item.svg" alt="item"></a>
+                                <div class="popup-open" ><img src="./css/img/svg/img-item.svg" alt="item"></div>
                             </div>
                             <div class="gallery-content__video">
                                 <img src="./css/img/video-item1.png" alt="alt">
@@ -314,68 +314,71 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="gallery-slider" id="go">
-            <div class="wrap">
-                <div class="swiper-container2">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="slider-wrap2">
-                                <div class="slider-wrap__content2">
-                                    <img src="./css/img/galley-slider1.png" alt="alt">
+                <!-- POPUP-gallery -->
+                <div class="popup-bg">
+                    <div class="popup">
+                        <img  class="close close-popup" src="./css/img/close.png" alt="alt">
+                        <div class="swiper-container2">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="slider-wrap2">
+                                        <div class="slider-wrap__content2">
+                                            <img src="./css/img/galley-slider1.png" alt="alt">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-wrap2">
-                                <div class="slider-wrap__content2">
-                                   <img src="./css/img/galley-slider2.png" alt="alt">
+                                <div class="swiper-slide">
+                                    <div class="slider-wrap2">
+                                        <div class="slider-wrap__content2">
+                                           <img src="./css/img/galley-slider2.png" alt="alt">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-wrap2">
-                                <div class="slider-wrap__content2">
-                                    <img src="./css/img/galley-slider3.png" alt="alt">
+                                <div class="swiper-slide">
+                                    <div class="slider-wrap2">
+                                        <div class="slider-wrap__content2">
+                                            <img src="./css/img/galley-slider3.png" alt="alt">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-wrap2">
-                                <div class="slider-wrap__content2">
-                                   <img src="./css/img/galley-slider4.png" alt="alt">
+                                <div class="swiper-slide">
+                                    <div class="slider-wrap2">
+                                        <div class="slider-wrap__content2">
+                                           <img src="./css/img/galley-slider4.png" alt="alt">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-wrap2">
-                                <div class="slider-wrap__content2">
-                                   <img src="./css/img/galley-slider5.png" alt="alt">
+                                <div class="swiper-slide">
+                                    <div class="slider-wrap2">
+                                        <div class="slider-wrap__content2">
+                                           <img src="./css/img/galley-slider5.png" alt="alt">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-wrap2">
-                                <div class="slider-wrap__content2">
-                                    <img src="./css/img/galley-slider6.png" alt="alt">
+                                <div class="swiper-slide">
+                                    <div class="slider-wrap2">
+                                        <div class="slider-wrap__content2">
+                                            <img src="./css/img/galley-slider6.png" alt="alt">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-wrap2">
-                                <div class="slider-wrap__content2">
-                                    <img src="./css/img/galley-slider7.png" alt="alt">
+                                <div class="swiper-slide">
+                                    <div class="slider-wrap2">
+                                        <div class="slider-wrap__content2">
+                                            <img src="./css/img/galley-slider7.png" alt="alt">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </div>                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                    </div>                        
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    </div>
                 </div>
+                <!-- POPUP-gallery -->
             </div>
         </section>
         <section class="maps">
@@ -533,8 +536,32 @@
                 </div>
             </div>
         </section>
-
-
+        <section class="popup-group">
+            <div class="popup-back-call">
+                <div class="wrap">
+                    <div class="back-call-container">
+                        <div class="close-back-call">
+                            <img src="./css/img/svg/close.svg" alt="alt">
+                        </div>
+                        <div class="back-call-title">
+                            <img src="./css/img/svg/logo.svg" alt="alt">
+                            <div class="back-call-title_text">
+                                <h2>Обратный звонок</h2>
+                                <p>Оставьте свои контактные данные и наши<br> специалисты свяжутся с Вами в ближайшее время</p>
+                            </div>
+                        </div>
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
+                        <div class="modal-backCall btn-fon">
+                            <div class="general-btn_wrap btn-wrap">
+                                <a class="btn-style" href="#">Отправить</a>
+                            </div>
+                        </div>
+                        <p>Оставляя данные в этой форме Вы даете согласие на обработку персональных данных</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer class="footer">
             <div class="wrap">
                 <div class="footer-container">
@@ -585,5 +612,6 @@
 <!-- bundle swiper -->
         <script src="./js/swiper.js"></script>
         <script src="./js/burger.js"></script>
+        <script src="./js/popup.js"></script>
     </body>
 </html>
