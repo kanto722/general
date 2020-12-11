@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <!-- style -->
 
 </head>
@@ -115,11 +116,13 @@
         </section>
         <section class="safety"> 
             <div class="safety-wrap">
+                <div class="safety-wrap-fon"></div>
                 <div class="wrap">
                     <div class="safety-container">
                         <div class="safety-elem1">
                             <div class="safety-elem1__video">
-                                <img src="./css/img/svg/play.svg" alt="play">
+                                <img src="./css/img/galley-slider1.png" alt="alt">
+                                <a data-fancybox="gallery" href="./css/video/gallery1.mp4"><img src="./css/img/svg/play.svg" alt="play"></a>
                             </div>
                             <div class="safety-elem1__content">
                                 <p><span>/</span>О тренажере</p>
@@ -288,19 +291,19 @@
                        <div class="gallery-content__wrap">
                             <div class="gallery-content__img">
                                 <img src="./css/img/gallery-item.png" alt="alt">
-                                <a href="#"><img src="./css/img/svg/img-item.svg" alt="item"></a>
+                                <a data-fancybox="gallery" rel = "group" href="#go"><img src="./css/img/svg/img-item.svg" alt="item"></a>
                             </div>
                             <div class="gallery-content__video">
                                 <img src="./css/img/video-item1.png" alt="alt">
-                                <a href="#"><img src="./css/img/svg/play.svg" alt="play"></a>
+                                <a data-fancybox="gallery" href="./css/video/gallery1.mp4"><img src="./css/img/svg/play.svg" alt="play"></a>
                             </div>
                             <div class="gallery-content__video">
                                 <img src="./css/img/video-item2.png" alt="alt">
-                                <a href="#"><img src="./css/img/svg/play.svg" alt="play"></a>
+                                <a data-fancybox="gallery" href="./css/video/gallery2.mp4"><img src="./css/img/svg/play.svg" alt="play"></a>
                             </div>
                             <div class="gallery-content__video">
                                 <img src="./css/img/video-item3.png" alt="alt">
-                                <a href="#"><img src="./css/img/svg/play.svg" alt="play"></a>
+                                <a data-fancybox="gallery" href="./css/video/gallery3.mp4"><img src="./css/img/svg/play.svg" alt="play"></a>
                             </div>
                        </div>
                     </div>
@@ -310,6 +313,68 @@
                             <a class="btn-style" href="#">Смотреть все проекты</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-slider" id="go">
+            <div class="wrap">
+                <div class="swiper-container2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="slider-wrap2">
+                                <div class="slider-wrap__content2">
+                                    <img src="./css/img/galley-slider1.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-wrap2">
+                                <div class="slider-wrap__content2">
+                                   <img src="./css/img/galley-slider2.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-wrap2">
+                                <div class="slider-wrap__content2">
+                                    <img src="./css/img/galley-slider3.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-wrap2">
+                                <div class="slider-wrap__content2">
+                                   <img src="./css/img/galley-slider4.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-wrap2">
+                                <div class="slider-wrap__content2">
+                                   <img src="./css/img/galley-slider5.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-wrap2">
+                                <div class="slider-wrap__content2">
+                                    <img src="./css/img/galley-slider6.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-wrap2">
+                                <div class="slider-wrap__content2">
+                                    <img src="./css/img/galley-slider7.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                    </div>                        
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </section>
@@ -362,9 +427,8 @@
                         </div>
                     </div>
                     <div class="business-block2">
-                        <!-- block-img -->
-                        <div class="business-img"> <img src="./css/img/svg/img-unknow.svg" alt="img"></div>
-                        <!-- block-img -->
+                        <img src="./css/img/preload-bussines.png" alt="alt">
+                        <a data-fancybox="gallery" href="./css/video/gallery6.mp4"><img src="./css/img/svg/play.svg" alt="play"></a>
                     </div>
                 </div>
             </div>
@@ -471,7 +535,7 @@
         </section>
 
 
-        <footer class="footer" style="display: none;">
+        <footer class="footer">
             <div class="wrap">
                 <div class="footer-container">
                     <div class="footer-logo">
@@ -486,16 +550,18 @@
                             <li><a class="footer-nav__link" href="#">Отзывы</a></li>
                         </ul>
                     </nav>
-                    <div class="footer-connection">
-                        <div class="footer-connection_number">
-                            <a href="tel:+79222677282">+7 (922) 267-72-82</a>
-                            <a href="tel:+79224795891">+7 (922) 479-58-91</a>
+                    <div class="footer-wrap">
+                        <div class="footer-connection">
+                            <div class="footer-connection_number">
+                                <a href="tel:+79222677282">+7 (922) 267-72-82</a>
+                                <a href="tel:+79224795891">+7 (922) 479-58-91</a>
+                            </div>
+                            <a class="footer-mail" href="malito:general-hockey@mail.ru" target="blank">general-hockey@mail.ru</a>
                         </div>
-                        <a class="footer-mail" href="malito:general-hockey@mail.ru" target="blank">general-hockey@mail.ru</a>
-                    </div>
-                    <div class="footer-btn btn-fon">
-                        <div class="footer-btn_wrap btn-wrap">
-                            <a class="btn-style" href="#">Обратный звонок</a>
+                        <div class="footer-btn btn-fon">
+                            <div class="footer-btn_wrap btn-wrap">
+                                <a class="btn-style" href="#">Обратный звонок</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -509,6 +575,10 @@
 <!-- script -->
         <script src="./js/paralax.js"></script>
 <!-- script -->
+<!-- JQ script -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<!-- JQ script -->
 <!-- bundle swiper -->
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

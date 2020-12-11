@@ -9,6 +9,9 @@
 .safety-wrap {
       background: linear-gradient(182deg, rgba(214, 240, 251, 0.7) 0.37%, rgba(161, 209, 251, 0.7) 149.49%, rgba(161, 209, 251, 0.7) 149.49%);
 }
+.safety-wrap-fon {
+      background-image: url(../../css/img/BG1.png);
+}
 .safety-container {
       padding-top: 70px;
       padding-bottom: 97px;
@@ -23,15 +26,23 @@
             justify-content: space-evenly;
             width: 100%;
 		&__video {
-                  background: #828282;
-                  width: 604px;
-                  height: 419px;
                   display: flex;
                   flex-direction: column;
                   align-items: center;
                   cursor: pointer;
-                  img {
+                  a {
                         padding-top: 172px;
+                        position: absolute;
+                        img {
+                              width: 84px;
+                              height: 84px;
+                        }
+                  }
+                  img{
+                        width: 604px;
+                        height: 419px;
+                        position: relative;
+                        object-fit: contain;
                   }
 		}
 
@@ -195,8 +206,17 @@
 //1200px
 @include media-laptop {
     .safety-elem1 {
+          flex-direction: column;
           &__video {
-                width: 540px;
+                margin-bottom: 40px;
+                img {
+                  width: 540px;
+                  height: 100%;
+                }
+                a {
+                      padding-top: 147px;
+                }
+                  
           }
     }
     .safety-elem2{
@@ -224,7 +244,7 @@
                   margin-right: 25px;
                   height: 370px;
                   img {
-                        padding-top: 148px;
+                        // padding-top: 148px;
                   };
             }
       }
@@ -347,7 +367,11 @@
 @include media-custom (650px) {
       .safety-elem1 {
             &__video {
+                  padding: 0px 10px;
                   width: 100%;
+                 img {
+                       width: 100%;
+                 }
             }
       }
       .safety-elem2{
@@ -487,9 +511,9 @@
 @include media-custom (405px) {
       .safety-elem1 {
             &__video {
-                  height: 270px;
-                  img {
-                        padding-top: 90px;
+                  height: 100%;
+                  a {
+                        padding-top: 126px;
                   }
             }
       }
@@ -505,8 +529,20 @@
             padding-top: 30px;
       }
 }
+@include media-custom (364px) {
+      .safety-elem1 {
+
+            a {
+                  padding-top: 116px;
+            }
+            
+      }
+}
 @include media-custom (341px) {
       .safety-elem1 {
+            a {
+                  padding-top: 100px;
+            }
             &__content {
                   h2 {
                         font-size: 22px;

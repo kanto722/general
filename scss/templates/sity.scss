@@ -163,6 +163,14 @@
             width: 540px;
         }
     }
+    .sity-block-content{
+        transform: translateY(-106px) skew(0deg);
+    }
+    .sity-block-wrap {
+        transform: skew(0deg);
+        padding: 40px 0px 35px 18px;
+
+    }
 }
 //767px
 @include media-tablet {
@@ -180,7 +188,7 @@
     .sity-block-content{
         width: 380px;
         height: 385px;
-        transform: translateY(-125px) skew(-10deg);
+        transform: translateY(-100px);
         left: 0px;
         h3 {
             width: 304px;
@@ -195,7 +203,7 @@
 }
 @include media-custom (693px) {
     .sity-block-content{
-        transform: translateY(-90px) skew(-10deg);
+        transform: translateY(-90px);
     }
     .sity-container{
         height: 760px;
@@ -203,7 +211,7 @@
 }
 @include media-custom (627px) {
     .sity-block-content{
-        transform: translateY(-120px) skew(-10deg);
+        transform: translateY(-120px);
     }
 }
 @include media-custom (590px) {
@@ -222,7 +230,6 @@
     .sity-block-content{
         width: 100%;
         height: 350px;
-        transform: translateY(-100px) skew(0deg);
         left: 0px;
         h3 {
             margin-bottom: 20px;
@@ -258,13 +265,13 @@
 
     }
     .sity-block-content{
-        transform: translateY(-40px) skew(0deg);
+        transform: translateY(-40px);
 
     }
 }
 @include media-custom (358px) {
     .sity-block-content{
-        transform: translateY(-100px) skew(0deg);
+        transform: translateY(-100px);
     }
 }
 @include media-custom (335px) {
@@ -282,7 +289,7 @@
         height: 515px;
     }
     .sity-block-content{
-        transform: translateY(-66px) skew(0deg);
+        transform: translateY(-66px);
     }
 }
 //320px

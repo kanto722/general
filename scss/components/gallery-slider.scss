@@ -1,0 +1,48 @@
+@import './variable';
+@import './common/media';
+
+
+.gallery-slider {
+    display: none;
+}
+.swiper-container2 {
+    
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.slider-wrap {
+    &__content2 {
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+
+@include media-custom (1070px) {
+    .slider-wrap {
+        &__content2 {
+            width: 300px;
+        }
+    
+    }
+}
+@include media-custom (992px) {
+    .slider-wrap {
+        &__content2 {
+            width: 100%;
+            img {
+
+            }   height: 100%;
+        }
+    
+    }
+}

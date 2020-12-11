@@ -106,7 +106,7 @@
 }
 .promo-wrap {
     width: 1255px;
-    background: linear-gradient(182deg, rgba(214, 240, 251, 0.7) 0.37%, rgba(161, 209, 251, 0.7) 149.49%, rgba(161, 209, 251, 0.7) 149.49%);
+    background: rgba(161, 224, 246, 0.4);
     transform: skew(-15deg);
     padding-bottom: 23px;
     padding-top: 17px;
@@ -116,6 +116,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    opacity: 1;
     // align-items: center;
     justify-content: center;
     transform: skew(15deg);
