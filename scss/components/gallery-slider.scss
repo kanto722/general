@@ -10,6 +10,7 @@
     left: 0;
     background: rgba(0, 0, 0, 0.4);
     display:none;
+    z-index: 999999;
 }
 .popup-bg_active{
     display: block;
