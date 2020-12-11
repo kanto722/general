@@ -20,6 +20,9 @@
     z-index: 10;
     pointer-events: none;
 }
+.sity-block2{
+    display: none;
+}
 .sity-block__fon {
     background-image: url(../../css/img/sity-fon-paral.png);
     position: absolute;
@@ -155,7 +158,11 @@
 }
 //992px
 @include media-tablet-horizontal {
-    
+    .sity-block-content{
+        h3 {
+            width: 540px;
+        }
+    }
 }
 //767px
 @include media-tablet {
