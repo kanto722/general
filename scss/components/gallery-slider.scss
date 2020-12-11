@@ -11,6 +11,9 @@
     background: rgba(0, 0, 0, 0.4);
     display:none;
 }
+.popup-bg_active{
+    display: block;
+}
 .popup {
     position: absolute;
     top: 50%;
@@ -29,9 +32,6 @@
     position: absolute;
     top: 0px;
     right: 30px;
-}
-.open-popup {
-    display:block;
 }
 .swiper-container2 {
     

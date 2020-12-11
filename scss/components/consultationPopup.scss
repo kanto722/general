@@ -1,9 +1,10 @@
 @import './variable';
 @import './common/media';
 
+
 .popup-group {
 }
-.popup-back-call {
+.popup-consultation {
     position: absolute;
     top: 0;
     top: 50%;
@@ -12,8 +13,9 @@
     padding-top: 60px;
     background: #ffffff;
     display: none;
+
 }
-.back-call-container {
+.consultation-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +41,7 @@
         margin-bottom: 45px;
     }
 }
-.close-back-call{
+.close-consultation{
     width: 500px;
     position: relative;
     img {
@@ -54,7 +56,7 @@
     }
 }
 
-.back-call-title {
+.consultation-title {
     display: flex;
     flex-direction: row;
     margin-top: 40px;

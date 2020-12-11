@@ -291,7 +291,7 @@
                        <div class="gallery-content__wrap">
                             <div class="gallery-content__img">
                                 <img src="./css/img/gallery-item.png" alt="alt">
-                                <div class="popup-open" ><img src="./css/img/svg/img-item.svg" alt="item"></div>
+                                <div onclick="openPopup();" ><img src="./css/img/svg/img-item.svg" alt="item"></div>
                             </div>
                             <div class="gallery-content__video">
                                 <img src="./css/img/video-item1.png" alt="alt">
@@ -317,7 +317,7 @@
                 <!-- POPUP-gallery -->
                 <div class="popup-bg">
                     <div class="popup">
-                        <img  class="close close-popup" src="./css/img/close.png" alt="alt">
+                        <img  onclick="closePopup();" class="close close-popup" src="./css/img/close.png" alt="alt">
                         <div class="swiper-container2">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
@@ -537,8 +537,9 @@
             </div>
         </section>
         <section class="popup-group">
+            <!-- popup-CallBack -->
             <div class="popup-back-call">
-                <div class="wrap">
+                <div class="popup-wrap">
                     <div class="back-call-container">
                         <div class="close-back-call">
                             <img src="./css/img/svg/close.svg" alt="alt">
@@ -550,17 +551,75 @@
                                 <p>Оставьте свои контактные данные и наши<br> специалисты свяжутся с Вами в ближайшее время</p>
                             </div>
                         </div>
-                        <input type="text" placeholder="Имя">
-                        <input type="text" placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
-                        <div class="modal-backCall btn-fon">
-                            <div class="general-btn_wrap btn-wrap">
-                                <a class="btn-style" href="#">Отправить</a>
+                        <form action="#">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
+                            <div class="modal-backCall btn-fon">
+                                <div class="popup-btn_wrap btn-wrap">
+                                    <a class="btn-style" href="#">Отправить</a>
+                                </div>
                             </div>
-                        </div>
-                        <p>Оставляя данные в этой форме Вы даете согласие на обработку персональных данных</p>
+                        </form>
                     </div>
                 </div>
             </div>
+            <!-- popup-CallBack -->
+
+            <!-- popup-application -->
+            <div class="popup-application">
+                <div class="popup-wrap">
+                    <div class="application-container">
+                        <div class="close-application">
+                            <img src="./css/img/svg/close.svg" alt="alt">
+                        </div>
+                        <div class="application-title">
+                            <img src="./css/img/svg/logo.svg" alt="alt">
+                            <div class="application-title_text">
+                                <h2>Заявка</h2>
+                                <p>Оставьте свои контактные данные и наши<br> специалисты свяжутся с Вами в ближайшее время</p>
+                            </div>
+                        </div>
+                        <form action="#">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
+                            <div class="modal-backCall btn-fon">
+                                <div class="popup-btn_wrap btn-wrap">
+                                    <a class="btn-style" href="#">Отправить</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- popup-application -->
+
+            <!-- popup-consultation -->
+            <div class="popup-consultation">
+                <div class="popup-wrap">
+                    <div class="consultation-container">
+                        <div class="close-consultation">
+                            <img src="./css/img/svg/close.svg" alt="alt">
+                        </div>
+                        <div class="consultation-title">
+                            <img src="./css/img/svg/logo.svg" alt="alt">
+                            <div class="consultation-title_text">
+                                <h2>Консультация</h2>
+                                <p>Оставьте свои контактные данные и наши<br> специалисты свяжутся с Вами в ближайшее время</p>
+                            </div>
+                        </div>
+                        <form action="#">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
+                            <div class="modal-backCall btn-fon">
+                                <div class="popup-btn_wrap btn-wrap">
+                                    <a class="btn-style" href="#">Отправить</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- popup-consultation -->
         </section>
         <footer class="footer">
             <div class="wrap">
@@ -613,5 +672,13 @@
         <script src="./js/swiper.js"></script>
         <script src="./js/burger.js"></script>
         <script src="./js/popup.js"></script>
+        <script>
+                function openPopup(){
+                    $('.popup-bg').addClass('popup-bg_active');
+                };
+                function closePopup(){
+                    $('.popup-bg').removeClass('popup-bg_active');
+                };
+        </script>
     </body>
 </html>
