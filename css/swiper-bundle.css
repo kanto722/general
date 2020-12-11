@@ -483,6 +483,7 @@
   .swiper-container-cube .swiper-slide-next,
   .swiper-container-cube .swiper-slide-prev,
   .swiper-container-cube .swiper-slide-next + .swiper-slide {
+    
     pointer-events: auto;
     visibility: visible;
   }
@@ -529,4 +530,12 @@
     z-index: 0;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
+  }
+
+  @media screen and (max-width: 992px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+    
   }

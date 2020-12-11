@@ -40,9 +40,6 @@
     .swiper-container {
         max-width: 1160px;
     }
-    .slider-wrap {
-        width: 375px;
-    }
 }
 //1200px
 @include media-laptop {
@@ -52,7 +49,9 @@
 }
 //992px
 @include media-tablet-horizontal {
-    
+    .swiper-container {
+        max-width: 767px;
+    }
 }
 //767px
 @include media-tablet {

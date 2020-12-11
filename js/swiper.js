@@ -3,9 +3,9 @@ const slider = document.querySelector('.swiper-container');
 let mySwiper = new Swiper(slider, {
     slidesPerView: 3,
     spaceBetween: 20,
-    // autoplay: {
-    //   delay: 1500,
-    // },
+    autoplay: {
+      delay: 2000,
+    },
     
     navigation: {
         nextEl: '.swiper-button-next',
@@ -25,21 +25,18 @@ let mySwiper = new Swiper(slider, {
         spaceBetween: 0
       },
       768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 0,
       },
       992: {
         slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      994: {
-        slidesPerView: 2,
         spaceBetween: 0,
-            autoplay: {
-            delay: 1500,
-          },
       },
       1200: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1300: {
         slidesPerView: 3,
         spaceBetween: 40,
       },

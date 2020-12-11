@@ -157,11 +157,23 @@
         margin-right: 0;
     }
 }
-
+@include media-custom (1506px) {
+    .promo-paralax-elem{
+        &_text {
+            transform: translate(701px, 130px);
+        }
+    }
+}
 @include media-custom (1500px) {
     .promo-paralax-elem{
         &_text {
             transform: translate(703px, 130px);
+        }
+    }
+}@include media-custom (1463px){
+    .promo-paralax-elem{
+        &_text {
+            transform: translate(684px, 120px);
         }
     }
 }
@@ -171,12 +183,26 @@
             transform: translate(680px, 120px);
         }
     }
+}@include media-custom (1426px) {
+    
+    .promo-paralax-elem{
+        &_text {
+            transform: translate(660px, 120px);
+        }
+    }
 }
 @include media-custom (1410px) {
     
     .promo-paralax-elem{
         &_text {
             transform: translate(656px, 120px);
+        }
+    }
+}@include media-custom (1383px) {
+    
+    .promo-paralax-elem{
+        &_text {
+            transform: translate(642px, 120px);
         }
     }
 }
@@ -189,6 +215,12 @@
     .promo-paralax-track{
         background-position: top 0% right 12%;
     }
+}@include media-custom (1356px) {
+    .promo-paralax-elem{
+        &_text {
+            transform: translate(625px, 120px);
+        }
+    }
 }
 @include media-custom (1342px) {
     .promo-paralax-elem{
@@ -196,14 +228,28 @@
             transform: translate(620px, 120px);
         }
     }
+}@include media-custom (1332px) {
+    .promo-paralax-elem {
+        &_text {
+            transform: translate(612px, 120px);
+        }
+    }
 }
 @include media-custom (1318px) {
     .promo-paralax-elem {
         &_text {
-            transform: translate(608px, 120px);
+            transform: translate(606px, 120px);
         }
     }
 }
+@include media-custom (1308px) {
+    .promo-paralax-elem {
+        &_text {
+            transform: translate(595px, 120px);
+        }
+    }
+}
+
 @include media-custom (1299px) {
     .promo-paralax-elem {
         background-position: top 16% right 47%;
@@ -232,6 +278,13 @@
         }
     }
 }
+@include media-custom (1263px) {
+    .promo-paralax-elem {
+        &_text {
+            transform: translate(586px, 120px);
+        }
+    }
+}
 @include media-custom (1249px) {
     .promo-paralax-elem{
         &_text {
@@ -239,10 +292,25 @@
         }
     }
 }
+@include media-custom (1236px) {
+    .promo-paralax-elem{
+        &_text {
+            transform: translate(570px, 120px);
+        }
+    }
+}
 @include media-custom (1222px) {
     .promo-paralax-elem {
         &_text {
             transform: translate(566px, 120px);
+
+        }
+    }
+}
+@include media-custom (1222px) {
+    .promo-paralax-elem {
+        &_text {
+            transform: translate(554px, 120px);
 
         }
     }
@@ -260,7 +328,7 @@
     .promo-paralax-elem{
         background-position: top 16% right 43%;
         &_text {
-            transform: translate(584px, 122px);
+            transform: translate(573px, 122px);
         }
     }
     .promo-block{
