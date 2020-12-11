@@ -55,11 +55,15 @@
 }
 //767px
 @include media-tablet {
-    
+    .swiper-container {
+        max-width: 480px;
+    }
 }
 //480px
 @include media-mobile {
-
+    .swiper-container {
+        max-width: 320px;
+    }
 }
 //320px
 @include media-mobile-small {

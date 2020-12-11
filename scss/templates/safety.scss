@@ -407,9 +407,10 @@
             display: flex;
             justify-content: center;
             &__fon {
-                  width: 450px;
+                  width: 430px;
                   margin-left: 0px;
                   padding: 15px 10px;
+                  padding-left: 0;
             }
       }
 }
@@ -472,6 +473,16 @@
                   }
             }
       }
+      .safety-elem3{
+            &__wrap {
+                  &_item {
+                        margin-right: 0;
+                  }
+                  &_item:nth-child(3) {
+                        margin-right: 0;
+                  }
+            }
+      }
 }
 @include media-custom (405px) {
       .safety-elem1 {
@@ -498,7 +509,7 @@
       .safety-elem1 {
             &__content {
                   h2 {
-                        font-size: 24px;
+                        font-size: 22px;
                         line-height: 28px;
                   }
                   span {

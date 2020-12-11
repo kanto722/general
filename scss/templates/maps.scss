@@ -25,7 +25,9 @@
 }
 //767px
 @include media-tablet {
-    
+    .maps{
+        padding-bottom: 20px;
+    }
 }
 //480px
 @include media-mobile {
