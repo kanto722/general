@@ -1,10 +1,10 @@
 const slider = document.querySelector('.swiper-container');
 const slider2 = document.querySelector('.swiper-container2');
 
-
 let mySwiper = new Swiper(slider, {
     slidesPerView: 3,
     spaceBetween: 20,
+    lazy: true,
     autoplay: {
       delay: 2000,
     },
@@ -41,6 +41,10 @@ let mySwiper = new Swiper(slider, {
       1300: {
         slidesPerView: 3,
         spaceBetween: 40,
+        lazy: true,
+        autoplay: {
+          delay: 2000,
+        },
       },
     }
   })
@@ -48,10 +52,11 @@ let mySwiper = new Swiper(slider, {
   let mySwiper2 = new Swiper(slider2, {
     slidesPerView: 3,
     spaceBetween: 20,
-    // autoplay: {
-    //   delay: 2000,
-    // },
-    
+    autoplay: {
+      delay: 2000,
+    },
+    lazy: true,
+
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

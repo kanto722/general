@@ -5,15 +5,18 @@
 .popup-group {
 }
 .popup-application {
-    position: absolute;
+    position: fixed;
     top: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding-top: 60px;
-    background: #ffffff;
     display: none;
+    z-index: 99999;
 
+}
+.popup-application_active {
+    display: block;
 }
 .application-container {
     display: flex;
@@ -46,8 +49,8 @@
     position: relative;
     img {
         position: absolute;
-        right: 0;
-        top: 0px;
+        right: 20px;
+        top: 20px;
         cursor: pointer;
     }
     img:hover {
@@ -96,9 +99,3 @@
 		}
 }
 
-.popup-wrap {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}

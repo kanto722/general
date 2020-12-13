@@ -13,7 +13,7 @@
       background-image: url(../../css/img/BG1.png);
 }
 .safety-container {
-      padding-top: 70px;
+      padding-top: 140px; //для якоря больше
       padding-bottom: 97px;
       display: flex;
       flex-direction: column;
@@ -268,7 +268,7 @@
 //992px
 @include media-tablet-horizontal {
       .safety-container{
-            padding-top: 40px;
+            padding-top: 100px;
       }
     .safety-elem3{
           &__wrap {

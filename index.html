@@ -36,11 +36,11 @@
                     <div class="header-block2">
                         <nav class="header-nav">
                             <ul>
-                                <li><a class="header-nav__link" href="#">О тренажере</a></li>
-                                <li><a class="header-nav__link" href="#">Преимущества</a></li>
-                                <li><a class="header-nav__link" href="#">Объекты</a></li>
-                                <li><a class="header-nav__link" href="#">Отзывы</a></li>
-                                <li><a class="header-nav__link" href="#">О компании</a></li>
+                                <li><a class="header-nav__link" href="#safety">О тренажере</a></li>
+                                <li><a class="header-nav__link" href="#track">Преимущества</a></li>
+                                <li><a class="header-nav__link" href="#galler">Объекты</a></li>
+                                <li><a class="header-nav__link" href="#speak">Отзывы</a></li>
+                                <li><a class="header-nav__link" href="#general">О компании</a></li>
                             </ul>
                         </nav>
                         <div class="header-burger">
@@ -54,9 +54,9 @@
                                     <a href="tel:+79224795891">+7 (922) 479-58-91</a>
                                 </div>
                             </div>
-                            <div class="header-btn btn-fon">
+                            <div onclick="openCallBack();" class="header-btn btn-fon">
                                 <div class="header-btn_wrap btn-wrap">
-                                    <a class="btn-style" href="#">Обратный звонок</a>
+                                    <a class="btn-style">Обратный звонок</a>
                                 </div>
                             </div>
                         </div>
@@ -84,8 +84,8 @@
                         <h1>Тренажер хоккейная беговая дорожка</h1>
                         <p>Наилучшая система для отработки техники катания вне ледовой площадки.</p>
                         <div class="promo-btn btn-fon">
-                            <div class="promo-btn_wrap btn-wrap">
-                                <a class="btn-style" href="#">Получить консультацию</a>
+                            <div onclick="openConsultation();" class="promo-btn_wrap btn-wrap">
+                                <a class="btn-style">Получить консультацию</a>
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                 </div>
             </div>
         </section>
-        <section class="safety"> 
+        <section id="safety" class="safety"> 
             <div class="safety-wrap">
                 <div class="safety-wrap-fon"></div>
                 <div class="wrap">
@@ -128,9 +128,9 @@
                                 <p><span>/</span>О тренажере</p>
                                 <h2>О хоккейной дорожке от «Генерал-хоккей»</h2>
                                 <span>Тренажеры производятся в соответствии с мировыми стандартами качества. Хоккейная беговая дорожка «Генерал-Хоккей» – это тренировочный инструмент, который имитирует катание на льду. Представляет собой двигающийся конвейер, с изменяющимся углом наклона, покрытый планками синтетического льда.</span>
-                                <div class="safety-btn btn-fon">
+                                <div onclick="openConsultation();" class="safety-btn btn-fon">
                                     <div class="safety-btn_wrap btn-wrap">
-                                        <a class="btn-style" href="#">Получить консультацию</a>
+                                        <a class="btn-style">Получить консультацию</a>
                                     </div>
                                 </div>
                             </div>
@@ -194,9 +194,9 @@
                     <div class="run-block-content">
                         <div class="run-block-wrap">
                             <h3>Совершенствуйте свое катание на тренажере хоккейная беговая дорожка</h3>
-                            <div class="run-btn btn-fon">
+                            <div onclick="openАpplication();" class="run-btn btn-fon">
                                 <div class="run-btn_wrap btn-wrap">
-                                    <a class="btn-style" href="#">Оставить заявку</a>
+                                    <a class="btn-style" >Оставить заявку</a>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +204,7 @@
                 </div>
             </div>
         </section>
-        <section class="track">
+        <section id="track" class="track">
             <div class="track-paralax">
                 <div class="wrap">
                     <div class="track-container">
@@ -260,9 +260,9 @@
                     <div class="help-block-content">
                         <div class="help-block-wrap">
                             <h3>Остались вопросы? Оставьте свои контактные данные и получите подробную консультацию у наших специалистов</h3>
-                            <div class="help-btn btn-fon">
+                            <div onclick="openАpplication();" class="help-btn btn-fon">
                                 <div class="help-btn_wrap btn-wrap">
-                                    <a class="btn-style" href="#">Оставить заявку</a>
+                                    <a class="btn-style">Оставить заявку</a>
                                 </div>
                             </div>
                         </div>
@@ -280,7 +280,7 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section id="galler" class="gallery">
             <div class="wrap">
                 <div class="gallery-container">
                     <div class="gallery-title">
@@ -289,21 +289,21 @@
                     </div>
                     <div class="gallery-content">
                        <div class="gallery-content__wrap">
-                            <div class="gallery-content__img">
+                            <div class="gallery-content__img" onclick="openPopup();">
                                 <img src="./css/img/gallery-item.png" alt="alt">
-                                <div class="gallery-content__img_play" onclick="openPopup();" ><img src="./css/img/svg/img-item.svg" alt="item"></div>
+                                <div class="gallery-content__img_play"  ><img src="./css/img/svg/img-item.svg" alt="item"></div>
                             </div>
                             <div class="gallery-content__video">
                                 <img src="./css/img/video-item1.png" alt="alt">
-                                <a data-fancybox="gallery" href="./css/video/gallery1.mp4"><img src="./css/img/svg/play.svg" alt="play"></a>
-                            </div>
-                            <div class="gallery-content__video">
-                                <img src="./css/img/video-item2.png" alt="alt">
                                 <a data-fancybox="gallery" href="./css/video/gallery2.mp4"><img src="./css/img/svg/play.svg" alt="play"></a>
                             </div>
                             <div class="gallery-content__video">
-                                <img src="./css/img/video-item3.png" alt="alt">
+                                <img src="./css/img/video-item2.png" alt="alt">
                                 <a data-fancybox="gallery" href="./css/video/gallery3.mp4"><img src="./css/img/svg/play.svg" alt="play"></a>
+                            </div>
+                            <div class="gallery-content__video">
+                                <img src="./css/img/video-item3.png" alt="alt">
+                                <a data-fancybox="gallery" href="./css/video/gallery5.mp4"><img src="./css/img/svg/play.svg" alt="play"></a>
                             </div>
                        </div>
                     </div>
@@ -404,9 +404,9 @@
                     <div class="sity-block-content">
                         <div class="sity-block-wrap">
                             <h3>В вашем городе еще нет хоккейной беговой дорожки от производителя тренажера «Генерал Хоккей»?</h3>
-                            <div class="sity-btn btn-fon">
+                            <div onclick="openАpplication();" class="sity-btn btn-fon">
                                 <div class="sity-btn_wrap btn-wrap">
-                                    <a class="btn-style" href="#">Оставить заявку</a>
+                                    <a class="btn-style">Оставить заявку</a>
                                 </div>
                             </div>
                         </div>
@@ -423,9 +423,9 @@
                             <p>Осуществляя инвестиции в Хоккейную дорожку «Генерал-хоккей», ваши доходы будут расти, благодаря посещению комплекса начиная от обычных игроков и заканчивая целыми командами</p>
                             <p>Если вы хотите создать новый бизнес, в основе которого будет лежать хоккей, то вы должны принять во внимание установку КБ «Генерал-хоккей». Купив эту тренировочную машину и установить её на ледовой арене, вы установите элитный инструмент для обучения</p>
                         </div>
-                        <div class="business-btn btn-fon">
+                        <div onclick="openConsultation();" class="business-btn btn-fon">
                             <div class="business-btn_wrap btn-wrap">
-                                <a class="btn-style" href="#">Получить консультацию</a>
+                                <a class="btn-style">Получить консультацию</a>
                             </div>
                         </div>
                     </div>
@@ -436,7 +436,7 @@
                 </div>
             </div>
         </section>
-        <section class="speak">
+        <section id="speak" class="speak">
             <div class="wrap">
                 <div class="speak-container">
                     <div class="speak-title">
@@ -517,7 +517,7 @@
                 </div>
             </div>
         </section>
-        <section class="general">
+        <section id="general" class="general">
             <div class="wrap">
                 <div class="general-container">
                     <div class="general-block1">
@@ -527,9 +527,9 @@
                         <p><span>/</span> О компании</p>
                         <h2>«Генерал-хоккей» российский производитель хоккейных беговых дорожек</h2>
                         <p>Мы изготавливаем наилучшую систему для отработки техники катания на коньках вне ледовой площадки - это установка для тренировки хоккеистов любого уровня подготовки отначинающих до профессионалов. При покупке тренажера у нас, покупатель, тренер/владелец может приехать к нам и обучиться работе. Мы поможем выстроить тренировочный процесс и расскажем коммерческую составляющую. А также мы бесплатно предоставляем специальные тренировочные протоколы для занятия на хоккейной беговой дорожке, разработанные в научно-иссследовательском спортивном центре в США «Atlethic Republic»</p>
-                        <div class="general-btn btn-fon">
+                        <div onclick="openConsultation();" class="general-btn btn-fon">
                             <div class="general-btn_wrap btn-wrap">
-                                <a class="btn-style" href="#">Получить консультацию</a>
+                                <a class="btn-style">Получить консультацию</a>
                             </div>
                         </div>
                     </div>
@@ -542,7 +542,7 @@
                 <div class="popup-wrap">
                     <div class="back-call-container">
                         <div class="close-back-call">
-                            <img src="./css/img/svg/close.svg" alt="alt">
+                            <img onclick="closeCallBack();" src="./css/img/svg/close.svg" alt="alt">
                         </div>
                         <div class="back-call-title">
                             <img src="./css/img/svg/logo.svg" alt="alt">
@@ -552,11 +552,11 @@
                             </div>
                         </div>
                         <form action="#">
-                            <input type="text" placeholder="Имя">
-                            <input type="text" placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
-                            <div class="modal-backCall btn-fon">
+                            <input type="text" required placeholder="Имя">
+                            <input type="text" required placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
+                            <div onclick="openEmail();" class="modal-backCall btn-fon">
                                 <div class="popup-btn_wrap btn-wrap">
-                                    <a class="btn-style" href="#">Отправить</a>
+                                    <a class="btn-style">Отправить</a>
                                 </div>
                             </div>
                         </form>
@@ -570,7 +570,7 @@
                 <div class="popup-wrap">
                     <div class="application-container">
                         <div class="close-application">
-                            <img src="./css/img/svg/close.svg" alt="alt">
+                            <img onclick="closeАpplication();" src="./css/img/svg/close.svg" alt="alt">
                         </div>
                         <div class="application-title">
                             <img src="./css/img/svg/logo.svg" alt="alt">
@@ -580,8 +580,8 @@
                             </div>
                         </div>
                         <form action="#">
-                            <input type="text" placeholder="Имя">
-                            <input type="text" placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
+                            <input type="text" required placeholder="Имя">
+                            <input type="text" required placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
                             <div class="modal-backCall btn-fon">
                                 <div class="popup-btn_wrap btn-wrap">
                                     <a class="btn-style" href="#">Отправить</a>
@@ -594,11 +594,11 @@
             <!-- popup-application -->
 
             <!-- popup-consultation -->
-            <div class="popup-consultation">
+            <div class="popup-consultation" onclick="closeConsultation();">
                 <div class="popup-wrap">
                     <div class="consultation-container">
                         <div class="close-consultation">
-                            <img src="./css/img/svg/close.svg" alt="alt">
+                            <img onclick="closeConsultation();" src="./css/img/svg/close.svg" alt="alt">
                         </div>
                         <div class="consultation-title">
                             <img src="./css/img/svg/logo.svg" alt="alt">
@@ -608,8 +608,8 @@
                             </div>
                         </div>
                         <form action="#">
-                            <input type="text" placeholder="Имя">
-                            <input type="text" placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
+                            <input type="text" required placeholder="Имя">
+                            <input type="text" required placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
                             <div class="modal-backCall btn-fon">
                                 <div class="popup-btn_wrap btn-wrap">
                                     <a class="btn-style" href="#">Отправить</a>
@@ -620,6 +620,20 @@
                 </div>
             </div>
             <!-- popup-consultation -->
+            <!-- popup-nice email -->
+            <div class="popup-email">
+                <div class="popup-wrap">
+                    <div class="close-email">
+                        <img onclick="closeEmail();" src="./css/img/svg/close.svg" alt="alt">
+                    </div>
+                    <div class="popup-content">
+                        <img src="./css/img/svg/open-email.svg" alt="alt">
+                        <h2>Отправлено</h2>
+                        <p>Ваши данные приняты в работу</p>
+                    </div>
+                </div>
+            </div>
+            <!-- popup-nice email -->
         </section>
         <footer class="footer">
             <div class="wrap">
@@ -629,11 +643,11 @@
                     </div>
                     <nav class="footer-nav">
                         <ul>
-                            <li><a class="footer-nav__link" href="#">О тренажере</a></li>
-                            <li><a class="footer-nav__link" href="#">Объекты</a></li>
-                            <li><a class="footer-nav__link" href="#">О компании</a></li>
-                            <li><a class="footer-nav__link" href="#">Преимущества</a></li>
-                            <li><a class="footer-nav__link" href="#">Отзывы</a></li>
+                            <li><a class="footer-nav__link" href="#safety">О тренажере</a></li>
+                            <li><a class="footer-nav__link" href="#galler">Объекты</a></li>
+                            <li><a class="footer-nav__link" href="#general">О компании</a></li>
+                            <li><a class="footer-nav__link" href="#track">Преимущества</a></li>
+                            <li><a class="footer-nav__link" href="#speak">Отзывы</a></li>
                         </ul>
                     </nav>
                     <div class="footer-wrap">
@@ -644,9 +658,9 @@
                             </div>
                             <a class="footer-mail" href="malito:general-hockey@mail.ru" target="blank">general-hockey@mail.ru</a>
                         </div>
-                        <div class="footer-btn btn-fon">
+                        <div onclick="openCallBack();" class="footer-btn btn-fon">
                             <div class="footer-btn_wrap btn-wrap">
-                                <a class="btn-style" href="#">Обратный звонок</a>
+                                <a class="btn-style" >Обратный звонок</a>
                             </div>
                         </div>
                     </div>
@@ -673,12 +687,12 @@
         <script src="./js/burger.js"></script>
         <script src="./js/popup.js"></script>
         <script>
-                function openPopup(){
-                    $('.popup-bg').addClass('popup-bg_active');
-                };
-                function closePopup(){
-                    $('.popup-bg').removeClass('popup-bg_active');
-                };
+                // function openPopup(){
+                //     $('.popup-bg').addClass('popup-bg_active');
+                // };
+                // function closePopup(){
+                //     $('.popup-bg').removeClass('popup-bg_active');
+                // };
         </script>
     </body>
 </html>
