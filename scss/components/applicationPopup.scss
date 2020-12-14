@@ -11,6 +11,19 @@
     // z-index: 999999;
     // подумать
 }
+.personal-data {
+    margin-top: 34px;
+    p {
+        width: 396px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 13px;
+        text-align: center; 
+        color: #4F4F4F;
+    }
+}
 
 .popup-application {
     position: fixed;

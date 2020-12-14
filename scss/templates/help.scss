@@ -243,12 +243,12 @@
 //480px
 @include media-mobile {
     .help-container{
-        height: 640px;
+        height: 496px;
     }
     .help-block-content{
         width: 100%;
         height: 350px;
-        transform: translateY(-100px) skew(0deg);
+        transform: translateY(0px) skew(0deg);
         left: 0px;
         h3 {
             margin-bottom: 20px;
@@ -262,7 +262,7 @@
 }
 @include media-custom (416px) {
     .help-container {
-        height: 580px;
+        // height: 580px;
     }
     .help-block-wrap {
         padding: 0px 20px 30px 20px;
@@ -276,7 +276,7 @@
 }
 @include media-custom (360px) {
     .help-container{
-        height: 520px;
+        height: 480px;
     }
     .help-block-wrap {
         padding: 0px 10px 30px 15px;
@@ -286,6 +286,6 @@
         margin-top: 0;
     }
     .help-block-content{
-        transform: translateY(-90px) skew(0deg);
+        transform: translateY(-8px) skew(0deg);
     }
 }

@@ -2,7 +2,7 @@
 @import './common/media';
 
 .speak {
-    padding-top: 70px;
+    padding-top: 100px;
 }
 .speak-container {
     display: flex;
@@ -166,7 +166,7 @@
 //480px
 @include media-mobile {
     .speak{
-        padding-top: 10px;
+        padding-top: 70px;
     }
     .speak-title{
         margin-bottom: 25px;
