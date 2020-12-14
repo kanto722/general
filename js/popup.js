@@ -62,12 +62,16 @@ function closePopup(){
 // обратный звонок
 function openCallBack(){
     $('.popup-back-call').addClass('popup-back-call_active');
+    $('.popup-group').addClass('popup-group_active');
     $('body').css('overflow-y', 'hidden');
     
 }
 
 function closeCallBack(){
     $('.popup-back-call').removeClass('popup-back-call_active');
+    $('.popup-group').removeClass('popup-group_active');
+    // $('.popup-group').addClass('popup-group_close');
+
     $('body').css('overflow-y', 'scroll');
 
 };
@@ -77,12 +81,14 @@ function closeCallBack(){
 // консультация
 function openConsultation(){
     $('.popup-consultation').addClass('popup-consultation_active');
+    $('.popup-group').addClass('popup-group_active');
     $('body').css('overflow-y', 'hidden');
 
 }
 
 function closeConsultation(){
     $('.popup-consultation').removeClass('popup-consultation_active');
+    $('.popup-group').removeClass('popup-group_active');
     $('body').css('overflow-y', 'scroll');
 
 };
@@ -91,12 +97,14 @@ function closeConsultation(){
 // оставить заявку
 function openАpplication(){
     $('.popup-application').addClass('popup-application_active');
+    $('.popup-group').addClass('popup-group_active');
     $('body').css('overflow-y', 'hidden');
 
 }
 
 function closeАpplication(){
     $('.popup-application').removeClass('popup-application_active');
+    $('.popup-group').removeClass('popup-group_active');
     $('body').css('overflow-y', 'scroll');
 
 };
@@ -105,12 +113,14 @@ function closeАpplication(){
 // email
 function openEmail(){
     $('.popup-email').addClass('popup-email_active');
+    $('.popup-group').addClass('popup-group_active');
     $('body').css('overflow-y', 'hidden');
 
 }
 
 function closeEmail(){
     $('.popup-email').removeClass('popup-email_active');
+    $('.popup-group').removeClass('popup-group_active');
     $('body').css('overflow-y', 'scroll');
 
 };
