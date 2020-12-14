@@ -1,6 +1,8 @@
 //slider-gallery-img 
 function openPopup(){
     $('.popup-bg').addClass('popup-bg_active');
+    $('body').css('overflow-y', 'hidden');
+
     const slider2 = document.querySelector('.swiper-container2');
 
     let mySwiper2 = new Swiper(slider2, {
@@ -51,6 +53,8 @@ function openPopup(){
 };
 function closePopup(){
     $('.popup-bg').removeClass('popup-bg_active');
+    $('body').css('overflow-y', 'scroll');
+
 };
 //slider-gallery-img 
 
@@ -58,12 +62,14 @@ function closePopup(){
 // обратный звонок
 function openCallBack(){
     $('.popup-back-call').addClass('popup-back-call_active');
+    $('body').css('overflow-y', 'hidden');
     
 }
 
 function closeCallBack(){
     $('.popup-back-call').removeClass('popup-back-call_active');
-    
+    $('body').css('overflow-y', 'scroll');
+
 };
 // обратный звонок
 
@@ -71,30 +77,41 @@ function closeCallBack(){
 // консультация
 function openConsultation(){
     $('.popup-consultation').addClass('popup-consultation_active');
+    $('body').css('overflow-y', 'hidden');
+
 }
 
 function closeConsultation(){
     $('.popup-consultation').removeClass('popup-consultation_active');
+    $('body').css('overflow-y', 'scroll');
+
 };
 // консультация
 
 // оставить заявку
 function openАpplication(){
     $('.popup-application').addClass('popup-application_active');
+    $('body').css('overflow-y', 'hidden');
+
 }
 
 function closeАpplication(){
     $('.popup-application').removeClass('popup-application_active');
-    
+    $('body').css('overflow-y', 'scroll');
+
 };
 // оставить заявку
 
 // email
 function openEmail(){
     $('.popup-email').addClass('popup-email_active');
+    $('body').css('overflow-y', 'hidden');
+
 }
 
 function closeEmail(){
     $('.popup-email').removeClass('popup-email_active');
+    $('body').css('overflow-y', 'scroll');
+
 };
 // email

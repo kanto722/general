@@ -223,6 +223,14 @@
 
 }
 }
+@include media-custom (360px) {
+    .run-block-content{
+        transform: translateY(-40px);
+    }
+    .run-container{
+        height: 482px;
+    }
+}
 //320px
 @include media-mobile-small {
    

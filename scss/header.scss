@@ -90,7 +90,7 @@
         }
         &__link:hover{
             color: $hover;
-            font-weight: bold;
+            // font-weight: bold; //// под вопросом, возможно ошибка в макете
         }
 
 }
