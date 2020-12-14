@@ -22,11 +22,14 @@
     .maps {
         padding-top: 40px;
     }
+    .maps-container{
+        height: 450px;
+    }
 }
 //767px
 @include media-tablet {
-    .maps{
-        padding-bottom: 20px;
+    .maps-container{
+        height: 350px;
     }
 }
 //480px

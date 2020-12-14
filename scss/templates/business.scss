@@ -2,6 +2,7 @@
 @import './common/media';
 
 .business {
+    padding-top: 50px;
 }
 .business-container {
     display: flex;
@@ -152,9 +153,6 @@
 }
 //480px
 @include media-mobile {
-    .business{
-        padding-top: 0;
-    }
     .business-block{
         h2 {
             font-size: 22px;
