@@ -121,7 +121,7 @@
                 <div class="wrap">
                     <div class="safety-container">
                         <div class="safety-elem1">
-                            <div class="safety-elem1__video" data-aos="fade-up" data-aos-delay="300">
+                            <div class="safety-elem1__video" data-aos="fade-up" data-aos-delay="300" id="play">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/8pLU3mA_r0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div class="safety-elem1__content" data-aos="fade-up" data-aos-delay="300">
@@ -626,7 +626,7 @@
                         <form action="#">
                             <input type="text" required placeholder="Имя">
                             <input type="text" required placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
-                            <div class="modal-backCall btn-fon">
+                            <div type="submit" class="modal-backCall btn-fon btn-mail" >
                                 <div class="popup-btn_wrap btn-wrap">
                                     <a class="btn-style">Отправить</a>
                                 </div>
@@ -657,9 +657,9 @@
                         <form action="#">
                             <input type="text" required placeholder="Имя">
                             <input type="text" required placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
-                            <div class="modal-backCall btn-fon">
+                            <div class="modal-application btn-fon btn-mail">
                                 <div class="popup-btn_wrap btn-wrap">
-                                    <a class="btn-style" href="#">Отправить</a>
+                                    <a class="btn-style">Отправить</a>
                                 </div>
                             </div>
                         </form>
@@ -672,7 +672,7 @@
             <!-- popup-application -->
 
             <!-- popup-consultation -->
-            <div class="popup-consultation" onclick="closeConsultation();">
+            <div class="popup-consultation">
                 <div class="popup-wrap">
                     <div class="consultation-container">
                         <div class="close-consultation">
@@ -688,9 +688,9 @@
                         <form action="#">
                             <input type="text" required placeholder="Имя">
                             <input type="text" required placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
-                            <div class="modal-backCall btn-fon">
+                            <div class="modal-consultation btn-fon btn-mail">
                                 <div class="popup-btn_wrap btn-wrap">
-                                    <a class="btn-style" href="#">Отправить</a>
+                                    <a class="btn-style">Отправить</a>
                                 </div>
                             </div>
                         </form>
@@ -702,7 +702,7 @@
             </div>
             <!-- popup-consultation -->
             <!-- popup-nice email -->
-            <div class="popup-email">
+            <div class="popup-email modal_thanks">
                 <div class="popup-wrap">
                     <div class="close-email">
                         <img onclick="closeEmail();" src="./css/img/svg/close.svg" alt="alt">
@@ -761,7 +761,6 @@
             <button class="footer-cookie-sgl">Принимаю</button>
          </div>
 <!-- Cookies -->
-
 
 <!-- JQ script -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
