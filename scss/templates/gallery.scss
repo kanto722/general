@@ -152,7 +152,7 @@
 @include media-tablet-horizontal {
     .gallery-content{
         &__wrap {
-            // width: 100%;
+            width: 700px;
         }
     }
 }

@@ -49,8 +49,9 @@
     position: relative;
     img {
         position: absolute;
-        right: 20px;
-        top: 20px;
+        right: 0px;
+        top: 0px;
+        width: 48px;
         cursor: pointer;
     }
     img:hover {
@@ -106,4 +107,90 @@
     align-items: center;
     background: #ffffff;
 
+}
+
+//1200px
+@include media-laptop {
+
+}
+//992px
+@include media-tablet-horizontal {
+    .consultation-container{
+        width: 100%;
+        height: 100%;
+    }
+}
+//767px
+@include media-tablet {
+    .consultation-container {
+        padding: 20px 20px 20px 20px;
+    }
+    .close-consultation {
+        width: 100%;
+        img {
+            top: 5px;
+            right: 5px;
+        }
+    }
+    .consultation-title {
+        img {
+            width: 80px;
+            margin-right: 15px;
+        }
+        &_text {
+            h2 {
+                font-size: 32px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}
+@include media-custom (630px) {
+    .popup-consultation {
+        width: 100%;
+    }
+}
+//480px
+@include media-mobile {
+    .personal-data {
+        p {
+            width: 100%;
+        }
+    }
+    .consultation-title_text {
+        h2 {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+        p {
+            br {
+                display: none;
+            }
+        }
+    }
+    .consultation-title {
+        margin-bottom: 25px;
+    }
+    .consultation-container {
+        form {
+            width: 100%;
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+}
+@include media-custom (350px) {
+    .consultation-title {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+//320px
+@include media-mobile-small {
+   
 }

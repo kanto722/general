@@ -25,6 +25,7 @@
         position: absolute;
         right: 20px;
         top: 20px;
+        width: 48px;
         cursor: pointer;
     }
     img:hover {
@@ -59,4 +60,20 @@
         text-align: center;
         color: $subtext;
     }
+}
+
+
+
+//480px
+@include media-mobile {
+    .close-email {
+        width: 100%;
+    }
+    .popup-content {
+        padding: 54px 60px 60px 60px;
+        h2 {
+            font-size: 30px;
+        }
+    }
+
 }
