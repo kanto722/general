@@ -1,7 +1,7 @@
 <?php
 
-if ($_POST['name']) {
-    $name = $_POST['name'];
+if ($_POST['name2']) {
+    $name = $_POST['name2'];
     $phone = $_POST['phone'];
 
     require_once "SendMailSmtpClass.php";

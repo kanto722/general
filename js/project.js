@@ -66,11 +66,11 @@ function showYaMaps() {
 // SEND MAIL
 function sendFormOne(sendButton, inputName_Name, inputName_Phone) {
   $('[name = ' + sendButton + ']').on('click', function () {
-      name = $(this).siblings('[name = ' + inputName_Name + ']').val();
+      name2 = $(this).siblings('[name = ' + inputName_Name + ']').val();
       phone = $(this).siblings('[name = ' + inputName_Phone + ']').val();
 
 
-      if (name == 0 || phone == 0) {
+      if (name2 == 0 || phone == 0) {
           alert('Заполните, пожалуйста, все поля');
           return false;
       } 
@@ -79,7 +79,7 @@ function sendFormOne(sendButton, inputName_Name, inputName_Phone) {
               type: 'POST',
               url: "/backend/mail.php",
               data: {
-                  "name": name,
+                  "name2": name2,
                   "phone": phone
               }
           }).done(function () {
@@ -93,4 +93,4 @@ function sendFormOne(sendButton, inputName_Name, inputName_Phone) {
   });
 };
 
-sendFormOne('form-btn', 'name', 'phone');
+sendFormOne('send', 'name', 'phone');

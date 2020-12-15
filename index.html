@@ -287,7 +287,7 @@
                         <p><span>/</span> Объекты</p>
                         <h2>Реализованные объекты</h2>
                     </div>
-                    <div class="gallery-content">
+                    <!-- <div class="gallery-content">
                        <div class="gallery-content__wrap">
                             <div class="gallery-content__img" onclick="openPopup();">
                                 <img src="./css/img/gallery-item.jpg" alt="alt">
@@ -299,12 +299,10 @@
                             <div class="gallery-content__video">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/DFehnD3gPsI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <!-- видоса нет на ютубе -->
                             <div class="gallery-content__video">
                                 <img src="./css/img/video-item3.jpg" alt="alt">
                                 <a data-fancybox="gallery" href="./css/video/gallery5.mp4"><img src="./css/img/svg/play.svg" alt="play"></a>
                             </div>
-                            <!-- видоса нет на ютубе -->
                        </div>
                        <div class="gallery-content-project">
                             <div class="gallery-content__wrap content-none">
@@ -378,7 +376,7 @@
                                 <img onclick="closeContent();" src="./css/img/svg/close.svg" alt="alt">
                             </div>
                        </div>
-                    </div>
+                    </div> -->
                     
                     <div onclick="openContent();" class="gallery-btn btn-fon" data-aos="fade-up">
                         <div class="gallery-btn_wrap btn-wrap">
@@ -503,7 +501,7 @@
                     </div>
                     <div class="business-block2" data-aos="fade-up" data-aos-delay="250">
                         <img src="./css/img/preload-bussines.jpg" alt="alt">
-                        <a data-fancybox="gallery" href="./css/video/gallery6.mp4"><img src="./css/img/svg/play.svg" alt="play"></a>
+                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=A9LwWES_fU0&ab_channel=General-hockey"><img src="./css/img/svg/play.svg" alt="play"></a>
                     </div>
                 </div>
             </div>
@@ -624,11 +622,11 @@
                             </div>
                         </div>
                         <form action="#">
-                            <input type="text" required placeholder="Имя">
-                            <input type="text" required placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
-                            <div type="submit" class="modal-backCall btn-fon btn-mail" >
+                            <input name="name2" type="text" required placeholder="Имя">
+                            <input name="phone" type="text" required placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
+                            <div class="modal-backCall btn-fon btn-mail" >
                                 <div class="popup-btn_wrap btn-wrap">
-                                    <a class="btn-style">Отправить</a>
+                                    <input name="send" type="submit" value="Отправить" class="btn-style">
                                 </div>
                             </div>
                         </form>
