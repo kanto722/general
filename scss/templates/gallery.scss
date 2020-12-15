@@ -77,9 +77,13 @@
             display: flex;
             // width: 100%;
             flex-direction: row;
-            justify-content: space-evenly; 
+            justify-content: flex-start; 
             margin-top: 10px;
 
+        }
+        iframe {
+            width: 294px;
+            height: 100%;
         }
 		&__img {
             display: flex;
@@ -117,6 +121,7 @@
     align-items: flex-start;
 
 }
+
 
 
 @include media-custom (1354px) {

@@ -337,6 +337,7 @@
         align-items: center;
         width: 250px;
         height: 100%;
+        overflow: auto;
         right: -100%;
         top: 97px;
         padding: 20px 0px 0px 0px;
@@ -354,6 +355,7 @@
         background: none;
         padding: 135px 0px 0px 0px;
         box-shadow: none;
+        overflow: auto;
 
     }
     .header-burger{
