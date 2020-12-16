@@ -9,7 +9,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    padding: 0px 140px;
+
     // position: relative;
     width: 100%;
 }
@@ -54,7 +55,7 @@
     width: 396px;
     background: linear-gradient(182deg, rgba(214, 240, 251, 0.7) 0.37%, rgba(161, 209, 251, 0.7) 149.49%, rgba(161, 209, 251, 0.7) 149.49%);
 		&__content {
-            background-image: url(/general/css/img/svg/comma.svg);
+            background-image: url(/css/img/svg/comma.svg);
             background-repeat: no-repeat;
             background-position: bottom 44% left 8%;
             background-size: 20%;
@@ -112,7 +113,11 @@
 .swiper-button-next {
 }
 
-
+@include media-custom (1354px) {
+    .speak-container {
+        padding: 0px 0px;
+    }
+}
 @include media-custom (1230px) {
     .slider-wrap {
         width: 375px;

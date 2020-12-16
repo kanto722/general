@@ -124,10 +124,11 @@ padding-bottom: 56px;
 }
 .footer-bottom {
     // margin-top: 20px;
+    width: 670px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     a {
         outline: none;
         font-family: Play;
@@ -137,7 +138,6 @@ padding-bottom: 56px;
         line-height: 16px;
         text-decoration-line: underline;
         color: #ffffff;
-        margin-right: 157px;
         cursor: pointer;
     }
     a:nth-child(2) {
@@ -152,6 +152,67 @@ padding-bottom: 56px;
 .footer-btn_wrap {
     margin-top: 0;
 }
+
+/* COOKIE */
+
+
+.footer-cookie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 7px 46px;
+    border: 1px solid #2375AC;
+    border-left: none;
+    border-right: none;
+    z-index: 510;
+  }
+  
+  .footer-cookie-x {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  
+  .footer-cookie-p {
+    font-size: 12px;
+    font-family: "Matahari";
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  .footer-cookie-a {
+    font-size: 12px;
+    color: #0F54A0;
+    cursor: pointer;
+    transition: .5s;
+    display: inline-block;
+  }
+  
+  .footer-cookie-sgl {
+    font-family: "Matahari";
+    background-color: transparent;
+    color: green;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    transition: .5s;
+  }
+  
+
 
 
 //1200px
@@ -194,6 +255,9 @@ padding-bottom: 56px;
                 margin-right: 0px;
             }
         }
+    }
+    .footer-bottom {
+        width: 100%;
     }
 }
 //992px
@@ -278,6 +342,21 @@ padding-bottom: 56px;
             margin-right: 0;
             margin-bottom: 20px;
         }
+    }
+}
+@include media-custom (550px) {
+    .footer-cookie {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-right: 10px;
+    }
+
+    .footer-cookie-p {
+        text-align: left;
+    }
+
+    .footer-cookie-sgl {
+        padding: 0;
     }
 }
 //480px
