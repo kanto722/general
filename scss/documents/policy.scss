@@ -1,0 +1,46 @@
+@import './variable';
+@import './common/media';
+
+.policy {
+    padding-top: 70px;
+}
+.policy-container {
+    h1 {
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+        color: $subtext;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        width: 100%;
+        color: $subtext;
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        width: 100%;
+        color: $subtext; 
+    }
+    p {
+        font-family: Play;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: $subtext;
+        span {
+            color: red;
+        }
+    }
+}
