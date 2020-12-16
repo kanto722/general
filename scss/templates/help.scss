@@ -115,6 +115,7 @@
         height: 100%;
         &-content {
             top: 120px;
+            transform: translateX(-45px) skew(-10deg);
         }
     }
     // .help-block__fon{

@@ -81,9 +81,13 @@
             margin-top: 10px;
 
         }
-        iframe {
-            width: 294px;
-            height: 100%;
+        &__video {
+
+            a {
+                img {
+                    width: 84px;
+                }
+            }
         }
 		&__img {
             display: flex;
