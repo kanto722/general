@@ -2,6 +2,7 @@
 function openPopup(){
     $('.popup-bg').addClass('popup-bg_active');
     $('body').css('overflow-y', 'hidden');
+    
 
     const slider2 = document.querySelector('.swiper-container2');
 
@@ -129,9 +130,15 @@ function closeEmail(){
 //fency-box + content
 function openContent(){
   $('.gallery-content-project').addClass('gallery-content-project_invite');
+  $('.gallery-btn').addClass('d-none')
+  $('.btn2').addClass('d-block')
+
 };
 
 function closeContent(){
   $('.gallery-content-project').removeClass('gallery-content-project_invite');
+  $('.gallery-btn').removeClass('d-none')
+  $('.btn2').removeClass('d-block')
+  $('.btn2').addClass('d-none')
 };
 //fency-box + content

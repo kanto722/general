@@ -57,7 +57,7 @@
     background: url(/css/img/fon-modal.png);
     background-repeat: no-repeat;
     background-position: center bottom;
-    padding: 20px 20px 53px 33px;
+    padding: 35px 20px 53px 57px;
     form {
         display: flex;
         flex-direction: column;
@@ -80,8 +80,9 @@
     position: relative;
     img {
         position: absolute;
-        right: 20px;
-        top: 20px;
+        width: 48px;
+        right: 0px;
+        top: 0px;
         cursor: pointer;
     }
     img:hover {

@@ -44,3 +44,35 @@
         }
     }
 }
+
+@include media-custom (767px) {
+    .cookie {
+        padding-top: 20px;
+    }
+    .cookie-container {
+        h1 {
+            font-size: 20px;
+            
+        }
+        h2 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+@include media-custom (360px) {
+    .cookie-container {
+        h1 {
+            font-size: 20px;
+            
+        }
+        h2 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}

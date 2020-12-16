@@ -200,13 +200,13 @@
 @include media-tablet-horizontal {
     
 }
-//767px
+//768px
 @include media-tablet {
     .help-container {
         height: 830px;
     }
     .help-block2{
-        margin-top: 40px;
+        margin-top: 20px;
         width: 100%;
         img {
             width: 100%;
@@ -230,7 +230,7 @@
 }
 @include media-custom (693px) {
     .help-block-content{
-        transform: translateY(-150px) skew(-10deg);
+        transform: translateY(-130px) skew(-10deg);
     }
     .help-container{
         height: 783px;
@@ -250,6 +250,7 @@
         width: 100%;
         height: 350px;
         transform: translateY(0px) skew(0deg);
+        align-items: flex-start;
         left: 0px;
         h3 {
             margin-bottom: 20px;

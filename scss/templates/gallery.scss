@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
-    padding: 0px 140px;
+    padding: 0px 20px;
 }
 .gallery-content-project {
     display: flex;
@@ -78,7 +78,6 @@
             // width: 100%;
             flex-direction: row;
             justify-content: flex-start; 
-            margin-top: 10px;
 
         }
         &__video {
@@ -125,7 +124,12 @@
     align-items: flex-start;
 
 }
-
+.d-none {
+    display: none;
+}
+.d-block {
+    display: block;
+}
 
 
 @include media-custom (1354px) {
@@ -170,7 +174,6 @@
     .gallery-title{
         margin-bottom: 30px;
         h2 {
-            text-align: center;
             width: 100%;
         }
         p {

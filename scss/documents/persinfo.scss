@@ -27,13 +27,18 @@
         }
     }
 }
+@include media-custom (767px) {
+    .person{
+        padding-top: 20px;
+    }
+}
 @include media-custom (360px) {
     .person-container {
         h1 {
             font-size: 20px;
         }
         p {
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 }
