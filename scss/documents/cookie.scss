@@ -1,0 +1,55 @@
+@import './variable';
+@import './common/media';
+
+.cookie {
+    padding-top: 70px;
+}
+.cookie-container {
+    h1 {
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        width: 100%;
+        color: $subtext;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        width: 100%;
+        color: $subtext;
+        margin-bottom: 20px;
+    }
+    p {
+        font-family: Play;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: $subtext;
+        span {
+            color: red;
+        }
+    }
+}
+
+@include media-custom (767px) {
+    .cookie {
+        padding-top: 20px;
+    }
+    .cookie-container {
+        h1 {
+            font-size: 20px;
+            
+        }
+        h2 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
