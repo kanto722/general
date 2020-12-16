@@ -529,6 +529,15 @@
             padding-top: 30px;
       }
 }
+@include media-custom (375px) {
+      .safety-elem1{
+            &__video {
+                  a {
+                        padding-top: 60px;
+                  }
+            }
+      }
+}
 @include media-custom (364px) {
       .safety-elem1 {
 
