@@ -55,3 +55,39 @@ function sendFormOne(sendButton, inputName_Name, inputName_Phone) {
 };
 
 sendFormOne('send', 'name', 'phone');
+
+
+
+
+///////
+$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 1700 мс
+
+        $('body,html').animate({scrollTop: top}, 1700);
+        $('.header-block1').removeClass('active');
+        $('.header-block2').removeClass('active');
+        $('.header-burger2').removeClass('active');
+
+    });
+});
+
+$(document).ready(function(){
+  $("#menu2").on("click","a", function (event) {
+      //отменяем стандартную обработку нажатия по ссылке
+      event.preventDefault();
+      //забираем идентификатор бока с атрибута href
+      var id  = $(this).attr('href'),
+      //узнаем высоту от начала страницы до блока на который ссылается якорь
+          top = $(id).offset().top;
+      //анимируем переход на расстояние - top за 1700 мс
+
+      $('body,html').animate({scrollTop: top}, 1700);
+  });
+});
