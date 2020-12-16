@@ -1,12 +1,3 @@
-function openContent(){
-    $('.gallery-content-project').addClass('gallery-content-project_invite');
-};
-
-function closeContent(){
-    $('.gallery-content-project').removeClass('gallery-content-project_invite');
-};
-
-
 // Отложенная загрузка карты
 var YaMapsShown = false;
 
@@ -33,36 +24,6 @@ function showYaMaps() {
 
 
 
-
-
-// // Отложенная загрузка карты
-// var VideoShow = false;
-
-// $(window).scroll(function () {
-//   var offset = $('.safety-elem1__video').offset().top;
-//   if (!VideoShow) {
-//     if ($(window).scrollTop() + $(window).height() > offset - 600) {
-//       VideoShow();
-//       VideoShow = true;
-//     }
-//   }
-// });
-
-// function VideoShow() {
-//    var iframe = document.createElement("iframe");
-//    iframe.frameborder = "0";
-//    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-//    iframe.allowfullscreen = true;
-//    iframe.src = "https://www.youtube.com/embed/8pLU3mA_r0g";
-
-//    document.getElementById("play").appendChild(iframe);
-//  };
-// // КОНЕЦ Отложенная загрузка карты
-
-
-
-
-
 // SEND MAIL
 function sendFormOne(sendButton, inputName_Name, inputName_Phone) {
   $('[name = ' + sendButton + ']').on('click', function () {
@@ -79,7 +40,7 @@ function sendFormOne(sendButton, inputName_Name, inputName_Phone) {
               type: 'POST',
               url: "/backend/mail.php",
               data: {
-                  "name2": name2,
+                  "name": name2,
                   "phone": phone
               }
           }).done(function () {
