@@ -78,7 +78,7 @@
             // width: 100%;
             flex-direction: row;
             justify-content: flex-start; 
-
+            margin-top: 10px;
         }
         &__video {
 
@@ -120,7 +120,8 @@
         }
 }
 .gallery-btn {
-    width: 100%;
+    width: 256px;
+    height: 50px;
     align-items: flex-start;
 
 }

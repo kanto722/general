@@ -3,8 +3,8 @@
     transform: skew(-10deg);
     background: linear-gradient(180deg, #FFCF00 0%, #FFB800 100%);
     padding: 10px 30px;
-    width: 256px;
-    height: 50px;
+    // width: 256px;
+    // height: 50px;
     cursor: pointer;
     text-align: center;
 
@@ -18,7 +18,7 @@
 }
 .btn-wrap {
     transform: skew(10deg);
-    margin-top: 5px;
+    // margin-top: 5px;
 }
 .btn-style {
     outline: none;
@@ -32,4 +32,7 @@
     line-height: 19px;
     color:#333333;
     cursor: pointer;
+}
+.btn-top {
+    margin-top: 5px;
 }
