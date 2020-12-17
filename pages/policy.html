@@ -17,9 +17,11 @@
     <meta name="theme-color" content="#767067" />
     <!-- style -->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="/css/libs/jquery.fancybox.min.css" />
 
     <!-- style -->
+
+    <!-- <? echo'<link rel="canonical" href="https://general-hockey.ru'.$_SERVER['REQUEST_URI'].'">'; ?> -->
 
 </head>
     <body>
@@ -295,20 +297,28 @@
                 <div class="footer-bottom">
                     <a target="blank" href="https://ww.net.ru/"><img src="/css/img/svg/logoWW.svg" alt="WW"></a>
                     <a target="_blank" href="/pages/policy.html">Политика конфиденциальности</a>
-                    <!-- <a class="footer-mail" href="malito:general-hockey@mail.ru" target="_blank">general-hockey@mail.ru</a> -->
                 </div>
             </div>
-            <!-- Cookies -->
+<!-- Cookies -->
+<?
+	if($_SESSION["user_ok_cock"] != '1')
+	{
+		echo'
+        <div class="cookie">
             <div class="footer-cookie">
                 <img src="/css/img/svg/x.svg" class="footer-cookie-x" alt="х">
                 <p class="footer-cookie-p">Продолжая использовать наш сайт, вы принимаете <a target="_blank" href="/pages/cookie.html" class="footer-cookie-a">политику использования cookie-файлов.</a></p>
-                <button class="footer-cookie-sgl">Принимаю</button>
+                <button class="footer-cookie-sgl" onclick="policyFunc(\'1\');">Принимаю</button>
             </div>
-            <!-- Cookies -->
+        </div>
+        ';
+    }
+?> 
+<!-- Cookies -->
         </footer>
         <!-- JQ script -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script src="/js/libs/jquery-3.4.1.min.js"></script>
+        <script src="/js/libs/jquery.fancybox.min.js"></script>
         <!-- JQ script -->
         <script src="/js/burger.js"></script>
         <script src="/js/popup.js"></script>

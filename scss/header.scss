@@ -168,6 +168,44 @@
     position: relative;
     z-index: 2;
 }
+
+
+//contacs-header 
+.header-block3 {
+    display: none;
+    // display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    padding-right: 100px;
+}
+
+.header-connection3 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+.header-connection {
+
+		&_number {
+            display: flex;
+		}
+}
+.header-btn {
+
+		&_wrap {
+		}
+}
+.btn-fon {
+}
+.btn-wrap {
+}
+.btn-style {
+}
+
+
 @include media-custom (1523px) {
     .header-connection{
         a {
@@ -185,7 +223,7 @@
     }
     .header-nav {
         &__link {
-            padding-right: 10px;
+            padding-right: 8px;
         }
         ul::after {
             margin-left: 0;
@@ -214,6 +252,10 @@
     }
 }
 @include media-custom (1400px){
+    .header-block3 {
+        display: flex;
+        width: 690px;
+    }
     .header-container {
         justify-content: space-between;
     }
@@ -421,6 +463,11 @@
         ul:after {
             display: none;
         }
+    }
+}
+@include media-custom (1070px) {
+    .header-block3{
+        display: none;
     }
 }
 //1200px

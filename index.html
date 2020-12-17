@@ -1,3 +1,7 @@
+<?
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -6,7 +10,7 @@
     <title>General</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    
+
     <!-- graph -->
     <meta property="og:image" content=" "/>
     <meta property="og:title" content=" " />
@@ -26,11 +30,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/css/img/favicon/apple-touch-icon-180x180.png" />
     <meta name="theme-color" content="#767067" />
     <!-- style -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/swiper-bundle.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/libs/swiper-bundle.css">
+    <link rel="stylesheet" href="/css/libs/jquery.fancybox.min.css" />
+    <link href="/css/aos.css" rel="stylesheet">
     <!-- style -->
+
+    <!-- <? echo'<link rel="canonical" href="https://general-hockey.ru'.$_SERVER['REQUEST_URI'].'">'; ?> -->
 
 </head>
     <body>
@@ -40,6 +46,19 @@
                     <div class="header-logo">
                         <a href="/index.html"><img src="/css/img/svg/logo.svg" alt="logo"></a>
                         <p>Производитель хоккейных дорожек</p>
+                    </div>
+                    <div class="header-block3">
+                        <div class="header-connection3">
+                            <div class="header-connection_number">
+                                <a href="tel:+79222677282">+7 (922) 267-72-82</a>
+                                <a href="tel:+79224795891">+7 (922) 479-58-91</a>
+                            </div>
+                        </div>
+                        <div onclick="openCallBack();" class="header-btn btn-fon">
+                            <div class="header-btn_wrap btn-wrap">
+                                <a class="btn-style">Обратный звонок</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="header-burger2">
                         <span></span>
@@ -373,9 +392,7 @@
                     <div class="popup">
                         <img  onclick="closePopup();" class="close close-popup" src="/css/img/close.png" alt="alt">
                         <div class="swiper-container2">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
                                 <div class="swiper-slide">
                                     <div class="slider-wrap2">
                                         <div class="slider-wrap__content2">
@@ -426,7 +443,6 @@
                                     </div>
                                 </div>
                             </div>                        
-                            <!-- If we need navigation buttons -->
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                         </div>
@@ -438,7 +454,6 @@
         <section class="maps" data-aos="fade-up">
             <div class="wrap">
                 <div class="maps-container" id="maps">
-                    <!-- <script defer type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A422b316b9615f1dd5eedbedddbf28572fd515fee51686b56bce7539c07f4f1bd&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script> -->
                 </div>
             </div>
         </section>
@@ -499,9 +514,7 @@
                     </div>
                     <div class="speak-slider" data-aos="fade-up">
                         <div class="swiper-container">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
                                 <div class="swiper-slide">
                                     <div class="slider-wrap">
                                         <div class="slider-wrap__content">
@@ -563,7 +576,6 @@
                                     </div>
                                 </div>
                             </div>                        
-                            <!-- If we need navigation buttons -->
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                         </div>
@@ -719,26 +731,33 @@
                 <div class="footer-bottom">
                     <a target="_blank" href="https://ww.net.ru/"><img src="/css/img/svg/logoWW.svg" alt="WW"></a>
                     <a target="_blank" href="/pages/policy.html">Политика конфиденциальности</a>
-                    <!-- <a class="footer-mail" href="malito:general-hockey@mail.ru" target="_blank">general-hockey@mail.ru</a> -->
                 </div>
             </div>
         </footer>
 
 <!-- Cookies -->
-        <div class="footer-cookie">
-            <img src="/css/img/svg/x.svg" class="footer-cookie-x" alt="х">
-            <p class="footer-cookie-p">Продолжая использовать наш сайт, вы принимаете <a target="_blank" href="/pages/cookie.html" class="footer-cookie-a">политику использования cookie-файлов.</a></p>
-            <button class="footer-cookie-sgl">Принимаю</button>
-         </div>
+<?
+	if($_SESSION["user_ok_cock"] != '1')
+	{
+		echo'
+        <div class="cookie">
+            <div class="footer-cookie">
+                <img src="/css/img/svg/x.svg" class="footer-cookie-x" alt="х">
+                <p class="footer-cookie-p">Продолжая использовать наш сайт, вы принимаете <a target="_blank" href="/pages/cookie.html" class="footer-cookie-a">политику использования cookie-файлов.</a></p>
+                <button class="footer-cookie-sgl" onclick="policyFunc(\'1\');">Принимаю</button>
+            </div>
+        </div>
+        ';
+    }
+?> 
 <!-- Cookies -->
 
 <!-- JQ script -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="/js/libs/jquery-3.4.1.min.js"></script>
+<script src="/js/libs/jquery.fancybox.min.js"></script>
 <!-- JQ script -->
 
 <!-- script animate AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="/js/aos.js"></script>
 
 <!-- script animate AOS -->
@@ -754,5 +773,21 @@
         <script src="/js/burger.js"></script>
         <script src="/js/popup.js"></script>
         <script src="/js/project.js"></script>
+        <script>
+            function policyFunc($cookie) {
+                $.ajax({
+                    type: 'POST',
+                    url: "/backend/acceptCookie.php",
+                    data: {"cookie": $cookie},
+                    response: 'text',
+                    success: function (data) {
+                        $('.cookie').fadeTo(500, 0);
+                        setTimeout(function () {
+                            $('.cookie').hide();
+                        }, 500);
+                    }
+                })
+            }
+        </script>
     </body>
 </html>

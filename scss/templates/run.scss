@@ -200,7 +200,7 @@
     }
     .run-block-wrap {
         transform: skew(0deg);
-        padding: 0px 76px 30px 50px;
+        padding: 20px 76px 30px 50px;
 
     }
 }
@@ -209,13 +209,13 @@
         // height: 562px;
     }
     .run-block-wrap {
-        padding: 0px 35px 30px 50px;
+        padding: 20px 35px 30px 50px;
 
     }
 }
 @include media-custom (360px) {
     .run-block-wrap {
-        padding: 0px 10px 30px 15px;
+        padding: 20px 10px 30px 15px;
 
     }
 }

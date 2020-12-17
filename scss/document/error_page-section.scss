@@ -42,3 +42,63 @@
         color: $title2;
     }
 }
+
+//1200px
+@include media-laptop {
+
+}
+//992px
+@include media-tablet-horizontal {
+    .error {
+        &_page-section {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        &_page-content {
+            img {
+                width: 265px;
+                height: 100%;
+            }
+        }
+    }
+}
+//767px
+@include media-tablet {
+.error {
+    &_page-content {
+        img {
+            width: 250px;
+            height: 100%;
+        }
+    }
+
+    &_page-title {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    &_page-a {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+}
+//480px
+@include media-mobile {
+    .error {
+        &_page-title {
+            font-size: 23px;
+            margin-bottom: 30px;
+        }
+
+        &_page-a {
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+    }
+}
+//320px
+@include media-mobile-small {
+   
+}
