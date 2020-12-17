@@ -1,3 +1,8 @@
+<?
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -319,8 +324,25 @@
         <!-- JQ script -->
         <script src="/js/libs/jquery-3.4.1.min.js"></script>
         <script src="/js/libs/jquery.fancybox.min.js"></script>
+        <script src="/js/libs/jquery.maskedinput.min.js"></script>
         <!-- JQ script -->
         <script src="/js/burger.js"></script>
         <script src="/js/popup.js"></script>
+        <script>
+            function policyFunc($cookie) {
+                $.ajax({
+                    type: 'POST',
+                    url: "/backend/acceptCookie.php",
+                    data: {"cookie": $cookie},
+                    response: 'text',
+                    success: function (data) {
+                        $('.cookie').fadeTo(500, 0);
+                        setTimeout(function () {
+                            $('.cookie').hide();
+                        }, 500);
+                    }
+                })
+            }
+        </script>
     </body>
 </html>

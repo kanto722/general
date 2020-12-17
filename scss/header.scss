@@ -109,7 +109,7 @@
             font-weight: normal;
             font-size: 16px;
             line-height: 19px;
-            margin-right: 38px;
+            margin-right: 25px;
             margin-left: 25px;
         }
         a:hover{
@@ -139,7 +139,7 @@
 
 
 .header-btn {
-    width: 199px;
+    width: 210px;
     height: 40px;
     z-index: 2;
     position: relative;
@@ -158,6 +158,7 @@
 .header-block1 {
     display: flex;
     flex-direction: row;
+    align-items: center;
     position: relative;
     z-index: 2;
 }
@@ -189,8 +190,22 @@
 }
 .header-connection {
 
-		&_number {
+		&_number2 {
             display: flex;
+            display: flex;
+            flex-direction: column;
+            a {
+                outline: none;
+                text-decoration: none;
+                color: #ffffff;
+                font-family: Play;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                margin-left: 0;
+                margin-bottom: 6px;
+            }
 		}
 }
 .header-btn {
@@ -205,11 +220,17 @@
 .btn-style {
 }
 
-
+@include media-custom (1548px) {
+    .header-nav {
+        &__link {
+            padding-right: 10px;
+        }
+    }
+}
 @include media-custom (1523px) {
     .header-connection{
         a {
-            margin-right: 20px;
+            margin-right: 15px;
         }
     }
 }
@@ -217,12 +238,13 @@
 @include media-custom (1505px) {
     .header-connection {
         a {
-            margin-right: 15px;
+            margin-right: 10px;
         }
 
     }
     .header-nav {
         &__link {
+            font-size: 15px;
             padding-right: 8px;
         }
         ul::after {
@@ -238,7 +260,7 @@
          }
     }
 }
-@include media-custom (1423px) {
+@include media-custom (1432px) {
     .header-connection {
         a {
             margin-right: 8px;
@@ -251,7 +273,7 @@
         }
     }
 }
-@include media-custom (1400px){
+@include media-custom (1406px){
     .header-block3 {
         display: flex;
         width: 690px;

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*Предварительно установить шрифты в систему и перезапустить браузер*/
+@font-face {
+  font-family: 'Play';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../css/fonts/Play/Play/PlayBold.eot");
+  src: url("../css/fonts/Play/PlayBold.eot?#iefix") format("embedded-opentype"), 
+  url("../css/fonts/Play/PlayBold.woff2") format("woff2"), 
+  url("../css/fonts/Play/PlayBold.woff") format("woff"), 
+  url("../css/fonts/Play/PlayBold.ttf") format("truetype"), 
+  url("../css/fonts/Play/PlayBold.svg") format("svg");
+}
+
+@font-face {
+  font-family: 'Play';
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../css/fonts/Play/PlayRegular.eot");
+  src: url("../css/fonts/Play/PlayRegular.eot?#iefix") format("embedded-opentype"), 
+  url("../css/fonts/Play/PlayRegular.woff2") format("woff2"), 
+  url("../css/fonts/Play/PlayRegular.woff") format("woff"), 
+  url("../css/fonts/Play/PlayRegular.ttf") format("truetype"), 
+  url("../css/fonts/Play/PlayRegular.svg") format("svg");
+}

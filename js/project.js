@@ -28,7 +28,9 @@ function showYaMaps() {
 function sendFormOne(sendButton, inputName_Name, inputName_Phone) {
   $('[name = ' + sendButton + ']').on('click', function () {
       name2 = $(this).siblings('[name = ' + inputName_Name + ']').val();
+      console.log("🚀 ~ file: project.js ~ line 31 ~ name2", name2)
       phone = $(this).siblings('[name = ' + inputName_Phone + ']').val();
+      console.log("🚀 ~ file: project.js ~ line 33 ~ phone", phone)
 
 
       if (name2 == 0 || phone == 0) {
@@ -40,13 +42,23 @@ function sendFormOne(sendButton, inputName_Name, inputName_Phone) {
               type: 'POST',
               url: "/backend/mail.php",
               data: {
-                  "name": name2,
+                  "name2": name2,
                   "phone": phone
               }
           }).done(function () {
               $('.modal_thanks').fadeTo(300, 1, 'linear').css('display', 'flex');
+              $('.popup-back-call').removeClass('popup-back-call_active');
+              $('.popup-group').removeClass('popup-group_active');
+              $('.popup-consultation').removeClass('popup-consultation_active');
+              $('.popup-group').removeClass('popup-group_active');
+              $('.popup-application').removeClass('popup-application_active');
+              $('.popup-group').removeClass('popup-group_active');
+
               setTimeout(function () {
-                  $('.btn-mail').fadeOut(500);
+                  $('.modal_thanks').fadeOut(500);
+                  $('.popup-group').removeClass('popup-group_active');
+                  $('body').css('overflow-y', 'scroll');
+
               }, 2000);
           });
           return false;
@@ -54,7 +66,7 @@ function sendFormOne(sendButton, inputName_Name, inputName_Phone) {
   });
 };
 
-sendFormOne('send', 'name', 'phone');
+sendFormOne('send', 'name2', 'phone');
 
 
 
@@ -91,3 +103,7 @@ $(document).ready(function(){
       $('body,html').animate({scrollTop: top}, 1700);
   });
 });
+
+
+//mask input
+$('.number-mask').mask('+7 (999) 999-9999'); 

@@ -8,14 +8,14 @@ if ($_POST['name2']) {
     $mailSMTP = new SendMailSmtpClass('ttformail@yandex.ru', 'QwE12345', 'ssl://smtp.yandex.ru', 465, "UTF-8");
 
     $from = array(
-        "bsb.ru",
+        "general-hockey.ru",
         "ttformail@yandex.ru"
     );
 
-    $to = 'slava02.11.1993@yandex.ru';
+    $to = 'ttformail@yandex.ru';
 
-    $subject = 'Запрос с сайта bsb.ru';
-    $message = 'Запрос с сайта bsb.ru<br><br>
+    $subject = 'Запрос с сайта general-hockey.ru';
+    $message = 'Запрос с сайта general-hockey.ru<br><br>
                 <b>Имя</b> - '.$name.'<br><br>
                 <b>Телефон</b> - '.$phone.'<br><br>';
 
@@ -31,5 +31,3 @@ if ($_POST['name2']) {
 };
 
 ?>
-
-<?php
