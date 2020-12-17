@@ -1,0 +1,44 @@
+@import './variable';
+@import './common/media';
+
+.error {
+    width: 100%;
+    height: 100%;
+    &_page-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    &_page-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 400px;
+            height: 100%;
+        }
+    }
+
+    &_page-title {
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 21px;
+        color: $title;
+        margin-bottom: 50px;
+    }
+
+    &_page-a {
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 21px;
+        color: $gray3;
+        margin-bottom: 100px;
+    }
+    &_page-a:hover {
+        color: $title2;
+    }
+}
